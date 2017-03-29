@@ -1,665 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc966af-72d0-4a79-8f17-c7faf1bacf7f" name="Default" comment="first commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/images/demo/1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/images/demo/2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/images/demo/200x140.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/images/demo/240x90.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/images/demo/290x100.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/images/demo/3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/images/demo/4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/images/demo/60x60.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/images/demo/80x80.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/images/demo/avatar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/images/demo/imgl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/images/demo/imgr.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/img/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/img/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/img/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/img/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/img/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/img/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/img/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/img/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/img/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/img/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/img/gradient.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/img/pass-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/img/user-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/images/black_file.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/images/file.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/images/file2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/images/purple_file.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/images/tab_l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/images/tab_r.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/images/topnav_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/images/trans.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/fonts/Roboto-Bold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/fonts/Roboto-Light-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/fonts/Roboto-Regular-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/images/demo/1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/images/demo/2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/images/demo/200x140.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/images/demo/240x90.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/images/demo/290x100.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/images/demo/3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/images/demo/4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/images/demo/60x60.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/images/demo/80x80.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/images/demo/avatar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/images/demo/imgl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/images/demo/imgr.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/img/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/img/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/img/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/img/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/img/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/img/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/img/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/img/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/img/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/img/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/img/gradient.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/img/pass-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/img/user-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/images/black_file.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/images/file.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/images/file2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/images/purple_file.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/images/tab_l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/images/tab_r.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/images/topnav_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/images/trans.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/fonts/Roboto-Bold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/fonts/Roboto-Light-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/fonts/Roboto-Regular-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/images/demo/1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/images/demo/2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/images/demo/200x140.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/images/demo/240x90.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/images/demo/290x100.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/images/demo/3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/images/demo/4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/images/demo/60x60.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/images/demo/80x80.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/images/demo/avatar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/images/demo/imgl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/images/demo/imgr.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/img/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/img/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/img/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/img/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/img/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/img/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/img/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/img/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/img/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/img/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/img/gradient.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/img/pass-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/img/user-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/images/black_file.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/images/file.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/images/file2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/images/purple_file.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/images/tab_l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/images/tab_r.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/images/topnav_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/images/trans.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/fonts/Roboto-Bold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/fonts/Roboto-Light-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/fonts/Roboto-Regular-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/images/demo/1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/images/demo/2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/images/demo/200x140.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/images/demo/240x90.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/images/demo/290x100.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/images/demo/3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/images/demo/4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/images/demo/60x60.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/images/demo/80x80.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/images/demo/avatar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/images/demo/imgl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/images/demo/imgr.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/img/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/img/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/img/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/img/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/img/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/img/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/img/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/img/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/img/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/img/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/img/gradient.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/img/pass-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/img/user-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/images/black_file.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/images/file.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/images/file2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/images/purple_file.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/images/tab_l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/images/tab_r.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/images/topnav_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/images/trans.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/fonts/Roboto-Bold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/fonts/Roboto-Light-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/fonts/Roboto-Regular-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/images/demo/1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/images/demo/2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/images/demo/200x140.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/images/demo/240x90.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/images/demo/290x100.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/images/demo/3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/images/demo/4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/images/demo/60x60.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/images/demo/80x80.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/images/demo/avatar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/images/demo/imgl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/images/demo/imgr.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/img/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/img/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/img/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/img/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/img/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/img/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/img/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/img/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/img/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/img/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/img/gradient.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/img/pass-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/img/user-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/images/black_file.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/images/file.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/images/file2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/images/purple_file.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/images/tab_l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/images/tab_r.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/images/topnav_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/images/trans.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/20160828_150247_1472916869768.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/20160828_150247_1472916869768_JAIK5IS.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/20160828_150247_1472916869768_JAIK5IS_eS3n9cF.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/20160828_150247_1472916869768_b87iCbX.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/20160828_150247_1472916869768_c2I7sxt.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/20160927_095531.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/20161027_200931.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/20161027_200931_muU4fei.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/akshay_R24Cgyf.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/akshay_R24Cgyf_CQkKekC.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/akshay_R24Cgyf_J9EfOJ6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/akshay_R24Cgyf_XSoSjVC.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/akshay_R24Cgyf_azjBK5W.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/akshay_R24Cgyf_azjBK5W_3BSmIjT.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/akshay_R24Cgyf_tCZlp8O.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/cyber_warfare-wallpaper-1920x1080.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/cyber_warfare-wallpaper-1920x1080_HlCTGku.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/cyber_warfare-wallpaper-1920x1080_e1a2h2D.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/cyber_warfare-wallpaper-1920x1080_e1a2h2D_admX1PJ.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/cyber_warfare-wallpaper-1920x1080_jyGygWk.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/galaxy_s5_2-wallpaper-1920x1080.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/galaxy_s5_2-wallpaper-1920x1080_AdxIlag.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/galaxy_s5_2-wallpaper-1920x1080_WoRBUPQ.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/image/galaxy_s5_2-wallpaper-1920x1080_WoRBUPQ_AGA2Dt3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/material/python.odt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/material/python_9XFcrfm.odt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/material/python_S7d2MUV.odt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/material/python_k3Uenom.odt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/Karan_Gajjar.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/Karan_Gajjar_27gCI9j.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/Karan_Gajjar_PESXTeK.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/python.odt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/python_9XFcrfm.odt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/python_sD1vD7s.odt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/python_zh5xGHn.odt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/karan.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ors.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_user/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_user/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_user/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_user/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_user/templates/admin.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_user/templates/edit_profile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_user/templates/manage_course.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_user/templates/manage_user.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_user/templates/show_details.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_user/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_user/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_user/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/class_details/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/class_details/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/class_details/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/class_details/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/class_details/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/class_details/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/class_details/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/class_details/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact/form.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/migrations/0002_auto_20170321_1658.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/migrations/0003_instructor_course_member_course.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/migrations/0004_material.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/migrations/0005_auto_20170322_1635.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/migrations/0006_auto_20170322_1915.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/migrations/0007_auto_20170322_1934.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/migrations/0008_auto_20170329_0708.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/migrations/0009_auto_20170329_0934.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/templates/add_course.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/templates/show_course.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instructor/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instructor/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instructor/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instructor/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instructor/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instructor/templates/add_material.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instructor/templates/add_schedule.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instructor/templates/instructor_course.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instructor/templates/material.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instructor/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instructor/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/instructor/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/css/stylel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/images/demo/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/images/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/js/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/js/searchstyle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.slidepanel.setup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.tabs.setup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/featured_slide.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/forms.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/images/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/layout.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/loginslider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/navi.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/tables.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/css/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/css/changelists.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/css/dashboard.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/css/fonts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/css/forms.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/css/rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/css/widgets.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/fonts/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/fonts/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/calendar-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/gis/move_vertex_off.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/gis/move_vertex_on.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/icon-addlink.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/icon-alert.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/icon-calendar.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/icon-changelink.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/icon-clock.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/icon-deletelink.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/icon-no.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/icon-unknown-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/icon-unknown.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/icon-yes.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/inline-delete.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/search.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/selector-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/sorting-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/tooltag-add.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/img/tooltag-arrowright.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/SelectBox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/SelectFilter2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/actions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/actions.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/admin/DateTimeShortcuts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/admin/RelatedObjectLookups.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/calendar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/cancel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/change_form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/collapse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/collapse.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/inlines.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/inlines.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/jquery.init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/popup_response.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/prepopulate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/prepopulate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/prepopulate_init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/timeparse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/urlify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/vendor/jquery/LICENSE-JQUERY.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/vendor/jquery/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/vendor/jquery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/vendor/xregexp/xregexp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/admin/js/vendor/xregexp/xregexp.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/images/demo/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/images/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/featured_slide.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/forms.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/images/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/layout.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/loginslider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/navi.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/tables.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/css/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/css/changelists.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/css/dashboard.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/css/fonts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/css/forms.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/css/rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/css/widgets.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/fonts/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/fonts/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/calendar-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/gis/move_vertex_off.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/gis/move_vertex_on.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/icon-addlink.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/icon-alert.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/icon-calendar.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/icon-changelink.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/icon-clock.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/icon-deletelink.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/icon-no.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/icon-unknown-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/icon-unknown.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/icon-yes.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/inline-delete.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/search.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/selector-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/sorting-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/tooltag-add.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/img/tooltag-arrowright.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/SelectBox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/SelectFilter2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/actions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/actions.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/admin/DateTimeShortcuts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/admin/RelatedObjectLookups.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/calendar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/cancel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/change_form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/collapse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/collapse.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/inlines.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/inlines.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/jquery.init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/popup_response.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/prepopulate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/prepopulate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/prepopulate_init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/timeparse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/urlify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/vendor/jquery/LICENSE-JQUERY.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/vendor/jquery/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/vendor/jquery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/vendor/xregexp/xregexp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/js/vendor/xregexp/xregexp.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/images/demo/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/images/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/featured_slide.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/forms.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/images/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/layout.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/loginslider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/navi.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/tables.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/css/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/css/changelists.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/css/dashboard.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/css/fonts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/css/forms.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/css/rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/css/widgets.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/fonts/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/fonts/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/calendar-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/gis/move_vertex_off.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/gis/move_vertex_on.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/icon-addlink.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/icon-alert.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/icon-calendar.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/icon-changelink.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/icon-clock.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/icon-deletelink.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/icon-no.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/icon-unknown-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/icon-unknown.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/icon-yes.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/inline-delete.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/search.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/selector-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/sorting-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/tooltag-add.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/img/tooltag-arrowright.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/SelectBox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/SelectFilter2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/actions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/actions.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/admin/DateTimeShortcuts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/admin/RelatedObjectLookups.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/calendar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/cancel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/change_form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/collapse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/collapse.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/inlines.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/inlines.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/jquery.init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/popup_response.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/prepopulate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/prepopulate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/prepopulate_init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/timeparse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/urlify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/vendor/jquery/LICENSE-JQUERY.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/vendor/jquery/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/vendor/jquery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/vendor/xregexp/xregexp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/js/vendor/xregexp/xregexp.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/images/demo/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/images/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/featured_slide.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/forms.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/images/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/layout.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/loginslider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/navi.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/tables.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/css/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/css/changelists.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/css/dashboard.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/css/fonts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/css/forms.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/css/rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/css/widgets.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/fonts/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/fonts/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/calendar-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/gis/move_vertex_off.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/gis/move_vertex_on.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/icon-addlink.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/icon-alert.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/icon-calendar.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/icon-changelink.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/icon-clock.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/icon-deletelink.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/icon-no.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/icon-unknown-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/icon-unknown.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/icon-yes.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/inline-delete.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/search.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/selector-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/sorting-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/tooltag-add.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/img/tooltag-arrowright.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/SelectBox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/SelectFilter2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/actions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/actions.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/admin/DateTimeShortcuts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/admin/RelatedObjectLookups.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/calendar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/cancel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/change_form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/collapse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/collapse.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/inlines.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/inlines.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/jquery.init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/popup_response.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/prepopulate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/prepopulate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/prepopulate_init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/timeparse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/urlify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/vendor/jquery/LICENSE-JQUERY.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/vendor/jquery/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/vendor/jquery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/vendor/xregexp/xregexp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/js/vendor/xregexp/xregexp.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/images/demo/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/images/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/featured_slide.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/forms.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/images/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/layout.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/loginslider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/navi.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/tables.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/templates/account.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/templates/accountset.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/templates/forms.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/templates/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/templates/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/templates/profile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/templates/register.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/templates/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/templates/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/material/mad.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/documentdemo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/documentdemo_O2D4d7l" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/documentdemo_O2D4d7l_Fwz5f4r" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/documentdemo_d5MGA2M" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/documentdemo_d5MGA2M_vbuGI2A" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/mad.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/mad_hSyXojs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/manage_3clitXo.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/manage_4YLJBWt.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/manage_ER9lNRE.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/resume/manage_bw6y8gh.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/member/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/member/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/member/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/member/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/member/templates/changeprofile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/member/templates/contact.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/member/templates/courses.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/member/templates/view_course.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/member/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/member/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/new_2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ors/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ors/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ors/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ors/wsgi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedule/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedule/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedule/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedule/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedule/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedule/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedule/templates/add_schedule.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedule/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedule/views.py" />
+    <list default="true" id="cdc966af-72d0-4a79-8f17-c7faf1bacf7f" name="Default" comment="second commit&#10;">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/new_2.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/css/style.css" afterPath="$PROJECT_DIR$/login/static/static_dirs/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/css/stylel.css" afterPath="$PROJECT_DIR$/login/static/static_dirs/css/stylel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/js/script.js" afterPath="$PROJECT_DIR$/login/static/static_dirs/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.min.js" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.slidepanel.setup.js" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.slidepanel.setup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.tabs.setup.js" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.tabs.setup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.ui.min.js" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.ui.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/featured_slide.css" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/featured_slide.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/forms.css" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/forms.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/layout.css" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/loginslider.css" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/loginslider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/navi.css" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/navi.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/tables.css" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/tables.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/admin/fonts/LICENSE.txt" afterPath="$PROJECT_DIR$/login/static/static_root/admin/fonts/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.min.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.ui.min.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.ui.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/featured_slide.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/featured_slide.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/forms.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/forms.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/layout.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/loginslider.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/loginslider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/navi.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/navi.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/tables.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/tables.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/admin/fonts/LICENSE.txt" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/fonts/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.min.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.ui.min.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.ui.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/featured_slide.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/featured_slide.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/forms.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/forms.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/layout.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/loginslider.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/loginslider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/navi.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/navi.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/tables.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/tables.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/fonts/LICENSE.txt" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/fonts/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.min.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.ui.min.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.ui.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/featured_slide.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/featured_slide.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/forms.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/forms.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/layout.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/loginslider.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/loginslider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/navi.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/navi.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/tables.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/tables.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/fonts/LICENSE.txt" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/fonts/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.min.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.ui.min.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.ui.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/featured_slide.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/featured_slide.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/forms.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/forms.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/layout.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/loginslider.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/loginslider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/navi.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/navi.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/tables.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/tables.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/forms.html" afterPath="$PROJECT_DIR$/login/templates/forms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/home.html" afterPath="$PROJECT_DIR$/login/templates/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/login.html" afterPath="$PROJECT_DIR$/login/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/profile.html" afterPath="$PROJECT_DIR$/login/templates/profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/script.js" afterPath="$PROJECT_DIR$/login/templates/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/style.css" afterPath="$PROJECT_DIR$/login/templates/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/material/mad.html" afterPath="$PROJECT_DIR$/media/material/mad.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/resume/mad.html" afterPath="$PROJECT_DIR$/media/resume/mad.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/resume/mad_hSyXojs.html" afterPath="$PROJECT_DIR$/media/resume/mad_hSyXojs.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -801,7 +212,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -833,26 +244,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="instructor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ors">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ors">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT=".idea">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -1034,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490807362671</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="second commit&#10;">
+      <created>1490808194463</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1490808194463</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1050,7 +472,7 @@
     <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24895833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24895833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1082,7 +504,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="second commit&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1336,6 +759,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
           <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1343,6 +767,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="161" column="6" selection-start-line="161" selection-start-column="6" selection-end-line="164" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1350,6 +775,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
           <caret line="216" column="19" selection-start-line="216" selection-start-column="19" selection-end-line="216" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1357,6 +783,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1364,6 +793,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1371,6 +801,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1378,6 +811,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="37" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1385,6 +821,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
           <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1393,6 +830,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1400,6 +838,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="18" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1407,6 +846,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
