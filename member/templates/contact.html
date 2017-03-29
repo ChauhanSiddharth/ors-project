@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Profile</title> {% load staticfiles %}
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="{% static 'static_dirs/layout/styles/layout.css' %}" type="text/css" />
+<script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.slidepanel.setup.js' %}"></script>
+<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: grey;
+    color: white;
+    padding: 5px 20px;
+    margin: 2px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=reset] {
+    width: 100%;
+    background-color: grey;
+    color: white;
+    padding: 5px 20px;
+    margin: 2px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper col0">
+  <div id="topbar">
+    <div id="slidepanel">
+      <div align="center" style="padding :10px;">
+        <h2>Notifications</h2>
+          <div style="overflow:scroll; height: 80px;"><marquee direction="up"><center><p>1.New Materials Added</p><p>2.New Materials Added</p><p>3.New Materials Added</p><p>4.New Materials Added</p><p>5.New Materials Added</p></center></marquee></div>
+        <!--<p class="readmore"><a href="#">Continue Reading &raquo;</a></p> -->
+      </div>
+        <br class="clear" />
+    </div>
+    <div id="loginpanel">
+      <ul>
+        <li class="left"><font color="red"> New Content </font>&raquo;</li>
+        <li class="right" id="toggle"><a id="slideit" href="#slidepanel">Notifications</a><a id="closeit" style="display: none;" href="#slidepanel">Close Panel</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+
+<!-- ####################################################################################################### -->
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo">
+      <h1><a href="../index.html">Contact</a></h1>
+      <p>Feedback</p>
+    </div>
+    <div class="fl_right">
+     <ul>
+        <li class="last"><a href="#">Search</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="/login/">Signout</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="topnav">
+    <ul>
+      <li><a href="/dashboard/">Home</a>
+        <ul>
+          <li><a href="#">Learning Courses</a></li>
+          <li><a href="#">Requests</a></li>
+          <li><a href="#">Notifications</a></li>
+          <li class="last"><a href="#">Schedule</a></li>
+        </ul>
+      </li>
+      <li><a href="/profile/">Profile</a>
+        <ul>
+          <li><a href="#">Personal Information</a></li>
+          <li><a href="#">Edit Profile</a></li>
+          <li class="last"><a href="#">Account Settings</a></li>
+        </ul>
+      </li>
+      <li><a href="/usercourses/">Courses</a>
+        <ul>
+          <li><a href="#">My Courses</a></li>
+          <li><a href="#">Course Material</a></li>
+          <li class="last"><a href="#">Course Schedule</a></li>
+        </ul>
+      </li>
+
+      <li class="active"><a href="/contact/">Contact Us</a>
+        <ul>
+          <li><a href="#">Feedback</a> </li>
+          <li class="last"><a href="#">Contact Details</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="breadcrumb">
+    <ul>
+      <li class="first">You Are Here</li>
+      <li>&#187;</li>
+      <li><a href="/dashboard/">Home</a></li>
+      <li>&#187;</li>
+      <li class="current"><a href="/contact/">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+  <div id="container">
+    <div id="content">
+      <div id="respond" style="height:600px;">
+        <h2>Feedback Form </h2>
+        <div align="center" border="1px solid black">
+            <form action="/contact/" method="post" enctype="text/plain">{% csrf_token %}
+              <table>
+                {% for fields in form %}
+                <tr><td>{{ fields.label_tag }}</td><td>{{ fields }}</td></tr>
+                {% endfor %}
+              </table>
+            <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </form>
+            {{display}}
+          <br>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col5">
+  <div id="footer">
+  <div class="footbox">
+      <h2>Settings</h2>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>Courses</h2>
+      <ul>
+        <li><a href="#">Your Course</a></li>
+        <li><a href="#">Course Material</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>Request a Course</h2>
+      <ul>
+        <li><a href="#">Make a Request</a></li>
+        <li><a href="#">Status</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>General</h2>
+      <ul>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Additional Information</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col6">
+  <div id="copyright">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">ORS</a></p>
+    <p class="fl_right">Template by Developer</a></p>
+    <br class="clear" />
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Template Name: Educational
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Profile</title> {% load staticfiles %}
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="{% static 'static_dirs/layout/styles/layout.css' %}" type="text/css" />
+<script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.slidepanel.setup.js' %}"></script>
+</head>
+<body>
+
+<div class="wrapper col0">
+  <div id="topbar">
+    <div id="slidepanel">
+      <div align="center" style="padding :10px;">
+        <h2>Notifications</h2>
+          <div style="overflow:scroll; height: 80px;"><marquee direction="up"><center><p>1.New Materials Added</p><p>2.New Materials Added</p><p>3.New Materials Added</p><p>4.New Materials Added</p><p>5.New Materials Added</p></center></marquee></div>
+        <!--<p class="readmore"><a href="#">Continue Reading &raquo;</a></p> -->
+      </div>
+        <br class="clear" />
+    </div>
+    <div id="loginpanel">
+      <ul>
+        <li class="left"><font color="red"> New Content </font>&raquo;</li>
+        <li class="right" id="toggle"><a id="slideit" href="#slidepanel">Notifications</a><a id="closeit" style="display: none;" href="#slidepanel">Close Panel</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div> 
+
+<!-- ####################################################################################################### -->
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo">
+      <h1><a href="../index.html">Profile</a></h1>
+      <p>General Information</p>
+    </div>
+    <div class="fl_right">
+     <ul>
+        <li class="last"><a href="#">Search</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="/login/">Signout</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="topnav">
+    <ul>
+      <li><a href="/dashboard/">Home</a>
+        <ul>
+          <li><a href="#">Learning Courses</a></li>
+          <li><a href="#">Requests</a></li>
+          <li><a href="#">Notifications</a></li>
+          <li class="last"><a href="#">Schedule</a></li>
+        </ul>
+      </li>
+      <li class="active"><a href="/profile/">Profile</a>
+        <ul>
+          <li><a href="#">Personal Information</a></li>
+          <li><a href="#">Edit Profile</a></li>
+          <li class="last"><a href="#">Account Settings</a></li>
+        </ul>
+      </li>
+      <li><a href="/usercourses/">Courses</a>
+        <ul>
+          <li><a href="#">My Courses</a></li>
+          <li><a href="#">Course Material</a></li>
+          <li class="last"><a href="#">Course Schedule</a></li>
+        </ul>
+      </li>
+
+      <li class="last"><a href="/contact/">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="breadcrumb">
+    <ul>
+      <li class="first">You Are Here</li>
+      <li>&#187;</li>
+      <li><a href="/dashboard/">Home</a></li>
+      <li>&#187;</li>
+      <li class="current"><a href="/profile/">Profile</a></li>
+    </ul>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+  <div id="container">
+      <div id="content" style="height:600px;">
+      {% for s in details %}
+      <!--<center><img src="{{ s.profile_pic.url }}" width="200px" height="180px"></center>-->
+      {% endfor %}
+        <br>
+        <h2>Personal Information</h2>
+      <table summary="Summary Here" cellpadding="0" cellspacing="0">
+        <thead>{% for s in details %}
+          <tr>
+            <th>General Information</th>
+          </tr>
+        </thead>
+          </table>
+              <table summary="Summary Here" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr class="light">
+            <td align="center">Name : </td><td>{{ s.firstname }} {{s.lastname}}</td>
+          </tr>
+          <tr class="dark">
+            <td align="center">Email : </td><td>{{user.email}}</td>
+          </tr>
+          <tr class="light">
+            <td align="center">Address : </td><td>{{s.address}}</td>
+          </tr>
+          <tr class="dark">
+            <td align="center">City : </td><td>{{s.city}}</td>
+          </tr>
+          <tr class="light">
+            <td align="center">State : </td><td>{{s.state}}</td>
+          </tr>
+          <tr class="dark">
+            <td align="center">Contact : </td><td>{{s.contact}}</td>
+          </tr>
+          <tr class="light">
+            <td align="center">Gender : </td><td>{{s.gender}}</td>
+          </tr>
+          <tr class="dark">
+            <td align="center">User : </td><td>{{s.usertype}}</td>
+          </tr>
+        </tbody></table>
+        <table summary="Summary Here" cellpadding="0" cellspacing="0">
+            <thead>
+            <tr>
+                <th>Additional Information</th>
+            </tr>
+            </thead>
+            </table>
+        <table summary="Summary Here" cellpadding="0" cellspacing="0">
+            <tr class="light">
+            <td align="center">Qualification : </td><td>{{s.qualification}}</td>
+          </tr>
+            <tr class="dark">
+            <td align="center">Skills : </td><td>{{s.skills}}</td>
+          </tr>
+            <tr class="light">
+            <td align="center">Join Date : </td><td>{{s.joiningdate}}</td>
+          </tr>
+                  {% endfor %}
+      </table>
+
+      <div id="respond">
+
+      </div>
+    </div>
+    <div id="column">
+      {% for s in details %}
+        <img src="{{ s.profile_pic.url }}" width="250px" height="200px">
+        {% endfor %}
+      <br>
+      <div class="subnav">
+        <h2>Edit Profile</h2>
+        <ul>
+          <li><a href="/profile/">Personal Information</a></li>
+          <li><a href="/editprofile/">Update Profile</a>
+            <ul>
+              <li><a href="/cpass/">Change Password</a></li>
+              <li><a href="/account/">Account Settings</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Request Status</a>
+          </li>
+        </ul>
+        <br>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col5">
+  <div id="footer">
+  <div class="footbox">
+      <h2>Settings</h2>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>Courses</h2>
+      <ul>
+        <li><a href="#">Your Course</a></li>
+        <li><a href="#">Course Material</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>Request a Course</h2>
+      <ul>
+        <li><a href="#">Make a Request</a></li>
+        <li><a href="#">Status</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>General</h2>
+      <ul>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Additional Information</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col6">
+  <div id="copyright">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">ORS</a></p>
+    <p class="fl_right">Template by Developer</a></p>
+    <br class="clear" />
+  </div>
+</div>
+</body>
+</html>

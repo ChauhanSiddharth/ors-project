@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+{% load staticfiles %}
+
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 2px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=button] {
+    width: 10%;
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 2px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+h2{
+               font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 28px;
+	line-height:34px;
+	color: #414848;
+	text-shadow: 1px 1px 0 rgba(50,50,50,1.0);
+	margin-bottom: 10px;
+}
+h4{
+               font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height:34px;
+	color: #414848;
+	margin-bottom: 10px;
+}
+.content {
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 20px;
+}
+table {
+   background: #f1f1f1;
+   border-radius: 4px;
+   padding : 35px;
+}
+
+.header{
+    height: 20%;
+    align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    
+}
+.right{
+    position: absolute;
+    right: 200px;
+    background: black;
+    color: white;
+}
+
+</style>
+</head>
+<body background="{% static 'static_dirs/img/bg.png' %}">
+
+
+<div class="header">
+<center><h2>Registration Additional Details</h2>
+    <h4>Fill up the form for additional details.</h4></center>
+	
+</div>
+<div class="right"></div>
+<div class="content"><center>
+  <form enctype="multipart/form-data" action="{{ action }}" method="POST">
+      <table  align="center" width="40%" >
+        {% csrf_token %}
+        <input type="hidden" id="user" name="user" value="{{ user.user }}">
+          <tr><td>First Name :</td><td><input type="text" name="firstname" id="firstname"></td></tr>
+        <tr><td>Middle Name :</td><td> <input type="text" name="middlename" id="middlename"></td></tr>
+        <tr><td>Last Name :</td><td> <input type="text" name="lastname" id="lastname"></td></tr>
+        <tr><td>Gender :</td><td> <select id="gender" name="gender">
+        <option value="male" selected="selected">male</option>
+        <option value="female">female</option>
+    </select></td></tr>
+        <tr><td>Usertype :</td><td> <select id="usertype" name="usertype">
+        <option value="member" selected="selected">member</option>
+        <option value="instructor">instructor</option>
+        <option value="administrator">admin</option>
+    </select></td></tr>
+        <tr><td>Address :</td><td> <input type="text" name="address" id="address"></td></tr>
+        <tr><td>City :</td><td> <input type="text" name="city" id="city"></td></tr>
+        <tr><td>State :</td><td> <input type="text" name="state" id="state"></td></tr>
+        <tr><td>Contact :</td><td> <input type="number" name="contact" id="contact"></td></tr>
+        <tr><td>Qualification :</td><td> <input type="text" name="qualification" id="qualification"></td></tr>
+        <tr><td>Skills :</td><td> <input type="text" name="skills" id="skills"></td></tr>
+        <tr><td>Profile_pic :</td><td> <input type="file" name="profile_pic" id="profile_pic"></td></tr>
+        <tr><td>Resume :</td><td> <input type="file" name="resume" id="resume"></td></tr>
+        <tr><td>Joiningdate :</td><td> <input type="date" name="joiningdate" id="joiningdate"></td></tr>
+      </table><br>
+      <input type="submit" value="Submit">
+    </form></center>
+	
+  
+    
+
+</div>
+
+</body>
+</html>

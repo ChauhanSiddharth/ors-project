@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Template Name: Educational
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>My Course</title>{% load staticfiles %}
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="{% static 'static_dirs/layout/styles/layout.css' %}" type="text/css" />
+<script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.slidepanel.setup.js' %}"></script>
+  <style>
+#search_submit {
+    width: 20%;
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+    margin: 2px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 40%;
+  font-size: 12px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  display: block
+}
+
+#myUL li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+a.gallerypic{
+  text-decoration:none;
+  position:relative;
+  display:block;
+  border:1px solid #666;
+  padding:3px;
+  margin-right:5px;
+  float:left;
+}
+
+a.gallerypic span.zoom-icon{
+  visibility:hidden;
+  position:absolute;
+  left:35%;
+  top:75% ;
+  filter:alpha(opacity=50);
+  -moz-opacity:0.5;
+  -khtml-opacity: 0.5;
+  opacity: 1.0;
+}
+
+a.gallerypic:hover span.zoom-icon{
+  visibility:visible;
+}
+</style>
+</head>
+<body>
+<div class="wrapper col0">
+  <div id="topbar">
+    <div id="slidepanel">
+      <div align="center" style="padding :10px;">
+        <h2>Notifications</h2>
+          <div style="overflow:scroll; height: 80px;"><marquee direction="up"><center><p>1.New Materials Added</p><p>2.New Materials Added</p><p>3.New Materials Added</p><p>4.New Materials Added</p><p>5.New Materials Added</p></center></marquee></div>
+        <!--<p class="readmore"><a href="#">Continue Reading &raquo;</a></p> -->
+      </div>
+        <br class="clear" />
+    </div>
+    <div id="loginpanel">
+      <ul>
+        <li class="left"><font color="red"> New Content </font>&raquo;</li>
+        <li class="right" id="toggle"><a id="slideit" href="#slidepanel">Notifications</a><a id="closeit" style="display: none;" href="#slidepanel">Close Panel</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo">
+      <h1><a href="../index.html">Profile</a></h1>
+      <p>General Information</p>
+    </div>
+    <div class="fl_right">
+     <ul>
+        <li class="last"><a href="#">Search</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="/logout/">Signout</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="topnav">
+    <ul>
+      <li><a href="/dashboard/">Home</a>
+        <ul>
+          <li><a href="#">Learning Courses</a></li>
+          <li><a href="#">Requests</a></li>
+          <li><a href="#">Notifications</a></li>
+          <li class="last"><a href="#">Schedule</a></li>
+        </ul>
+      </li>
+      <li><a href="/profile/">Profile</a>
+        <ul>
+          <li><a href="#">Personal Information</a></li>
+          <li><a href="#">Edit Profile</a></li>
+          <li class="last"><a href="#">Account Settings</a></li>
+        </ul>
+      </li>
+      <li class="active"><a href="/usercourses/">Courses</a>
+        <ul>
+          <li><a href="#">My Courses</a></li>
+          <li><a href="#">Course Material</a></li>
+          <li class="last"><a href="#">Course Schedule</a></li>
+        </ul>
+      </li>
+
+      <li class="last"><a href="/contact/">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="breadcrumb">
+    <ul>
+      <li class="first">You Are Here</li>
+      <li>&#187;</li>
+      <li><a href="/dashboard/">Home</a></li>
+      <li>&#187;</li>
+      <li class="current"><a href="/usercourses/">Courses</a></li>
+    </ul>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+  <div id="container">
+    <div id="content" style="height:600px;">
+      <h2>All Course</h2>
+    <!--  {% for data in data %}
+      <a href="#" onclick="document.getElementById('myForm','id').submit();" class="gallerypic" title="">
+  <img src="{{ data.image.url }}" height="150" width="200" alt="[Gallery Photo]" class="pic" />
+  <span class="zoom-icon">
+
+  <form id="myForm" action="/view_course/" method="post">{% csrf_token %}
+      <input type="hidden" name="id" value="{{ data.id }}" id="id">
+	<font color="white"></font><input type="submit" value="Request">
+  </form>
+  </span></a>
+    {% endfor %}-->
+<script type="text/javascript" src="{% static 'static_dirs/js/searchstyle.js' %}"></script>
+  <form type="get" action="/searchbox/" style="margin: 0">
+    <input  id="myInput" type="text" name="search_box" onkeyup="searchFunction()" placeholder="Search..." >
+    &nbsp;
+    <button id="search_submit" type="submit" >Submit</button>
+    <ul id="myUL">
+  {% for data in data %}
+  <li><a href="#">{{ data.title }}</a></li>
+  {% endfor %}
+  </ul>
+
+  </form>
+      <br>
+      <table>
+        {% for course in course %}
+        <thead>
+          <th>Title</th>
+          <th>Description</th>
+        </thead>
+        <tr>
+          <td><form id="myForm" action="/view_course/" method="post">{% csrf_token %}
+      <input type="hidden" name="id" value="{{ course.id }}" id="id">
+	<font color="white"></font><input type="submit" value="{{course.title}}">
+  </form></td>
+          <td>{{ course.description }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+    <div id="column">
+      <div class="subnav">
+      <h2>My Course</h2>
+        {{display}}
+      {% for mycourse in mycourse %}
+      <h3><a href="#">{{mycourse.course_id.title}}</a></h3>
+      <table>
+        <thead>
+        <th>Description</th>
+        </thead>
+        <tr>
+          <td align="center">{{mycourse.course_id.description}}</td>
+        </tr>
+      </table>
+      <table>
+        <thead>
+        <th>Material</th>
+        <th>Schedule</th>
+        </thead>
+        <tr>
+          <td><button>Material</button></td>
+          <td><button>Schedule</button></td>
+        </tr>
+      </table>
+      {% endfor %}
+      </div></div>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<!-- ####################################################################################################### -->
+<div class="wrapper col5">
+  <div id="footer">
+  <div class="footbox">
+      <h2>Settings</h2>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>Courses</h2>
+      <ul>
+        <li><a href="#">Your Course</a></li>
+        <li><a href="#">Course Material</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>Request a Course</h2>
+      <ul>
+        <li><a href="#">Make a Request</a></li>
+        <li><a href="#">Status</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>General</h2>
+      <ul>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Additional Information</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col6">
+  <div id="copyright">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">ORS</a></p>
+    <p class="fl_right">Template by Developer</a></p>
+    <br class="clear" />
+  </div>
+</div>
+</body>
+</html>

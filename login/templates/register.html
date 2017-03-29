@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+{% load staticfiles %}
+
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 2px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=button] {
+    width: 10%;
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 2px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+h2{
+               font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 28px;
+	line-height:34px;
+	color: #414848;
+	text-shadow: 1px 1px 0 rgba(50,50,50,1.0);
+	margin-bottom: 10px;
+}
+h4{
+               font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height:34px;
+	color: #414848;
+	margin-bottom: 10px;
+}
+.content {
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 20px;
+}
+table {
+   background: #f1f1f1;
+   border-radius: 4px;
+   padding : 35px;
+}
+
+.header{
+    height: 20%;
+    align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+
+}
+.right{
+    position: absolute;
+    right: 200px;
+    background: black;
+    color: white;
+}
+
+</style>
+</head>
+<body background="{% static 'static_dirs/img/bg.png' %}">
+
+
+<div class="header">
+<center><h2>Registration Form</h2>
+<h4>Dont have account sign up this form.</center>
+
+</div>
+<div class="right"></div>
+<div class="content"><center>
+    <form enctype="multipart/form-data" action="{{ action }}" method="POST">
+        {% csrf_token %}
+        <table>
+                {% for fields in form %}
+                <tr><td>{{ fields.label_tag }}</td><td>{{ fields }}</td></tr>
+                {% endfor %}
+              </table><br>
+        <input type="submit" value="Register"><br>
+        <p>Already have an Account ?</p>
+        <a href="/login/"><input type="button" value="Login"></a>
+    </form></center>
+</div>
+
+</body>
+</html>

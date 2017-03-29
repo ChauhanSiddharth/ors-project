@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Template Name: Educational
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Dashboard</title> {% load staticfiles %}
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="{% static 'static_dirs/layout/styles/layout.css' %}" type="text/css" />
+<script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.slidepanel.setup.js' %}"></script>
+<script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.ui.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.tabs.setup.js' %}"></script>
+<script>
+</script>
+</head>
+<body>
+<div class="wrapper col0">
+  <div id="topbar">
+    <div id="slidepanel">
+      <div align="center" style="padding :10px;">
+        <h2>Notifications</h2>
+        	<div style="overflow:scroll; height: 80px;">Nothing</div>
+        <!--<p class="readmore"><a href="#">Continue Reading &raquo;</a></p> -->
+      </div>
+
+      <br class="clear" />
+    </div>
+    <div id="loginpanel">
+      <ul>
+        <li class="left"><font color="red"> New Content </font>&raquo;</li>
+        <li class="right" id="toggle"><a id="slideit" href="#slidepanel">Notifications</a><a id="closeit" style="display: none;" href="#slidepanel">Close Panel</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div> 
+
+<!-- ####################################################################################################### -->
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo">
+      <h1><a href="index.html">Dashboard</a></h1>
+      <p>Home</p>
+    </div>
+    <div class="fl_right">
+      <ul>
+        <li class="last"><a href="#">Search</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="/login/">Signout</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="topnav">
+    <ul>
+      <li class="active"><a href="/dashboard/">Home</a>
+        <ul>
+          <li><a href="#">Course Details</a></li>
+          <li><a href="#">Requests</a></li>
+          <li class="last"><a href="#">Schedule</a></li>
+        </ul>
+      </li>
+      <li><a href="/profile/">Profile</a>
+        <ul>
+          <li><a href="#">Personal Information</a></li>
+          <li><a href="#">Edit Profile</a></li>
+          <li class="last"><a href="#">Account Settings</a></li>
+        </ul>
+      </li>
+      <li><a href="/usercourses/">Courses</a>
+        <ul>
+          <li><a href="#">My Courses</a></li>
+          <li><a href="#">Course Material</a></li>
+          <li class="last"><a href="#">Course Schedule</a></li>
+        </ul>
+      </li>
+
+      <li class="last"><a href="/contact/">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="breadcrumb">
+    <ul>
+      <li class="first">You Are Here</li>
+      <li>&#187;</li>
+      <li class="current"><a href="/dashboard/">Home</a></li>
+    </ul>
+  </div>
+</div>
+<div class="wrapper col4">
+  <div id="container">
+    <div id="content" style="height:600px;">
+      {% for data in data %}
+      {% for course in course %}
+      <table align="center">
+	<center><h4>Welcome, {{ data.firstname }} {{ data.lastname }}</h4></center>
+	<thead><th>Course Schedule</th></thead>
+	</table>
+	<table align="center">
+	<tr><td align="center">Course Name:</td><td> {{ course.title }}</td></tr>
+	<tr><td align="center">Instructor :</td><td> Divyesh Sir</td></tr>
+	<tr><td align="center">Class Title :</td><td> Django Forms</td></tr>
+	<tr><td align="center">Class Description :</td><td> Using Forms in Django Project</td></tr>
+	<tr><td align="center">Extra Note :</td><td> Install rest framework</td></tr>
+	<tr><td align="center">Class held :</td><td> Pending</td></tr>
+	<tr><td align="center">Status:</td><td> Active</td></tr>
+	<tr><td align="center">Class Date :</td><td> 17 March 2017</td>
+	<tr><td align="center">Class Time :</td><td> 5:30 pm</td></tr>
+	</table>
+	<table align="center">
+	<thead><th>Requested Orders</th></thead>
+	<tr><td align="center">No Pending Requests</td></tr>
+</table>
+      {% endfor %}
+      {% endfor %}
+    </div>
+
+    <div class="clear"></div>
+  </div>
+</div>
+
+<!-- ####################################################################################################### -->
+
+
+
+<!-- ####################################################################################################### -->
+<div class="wrapper col5">
+  <div id="footer">
+  <div class="footbox">
+      <h2>Settings</h2>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>Courses</h2>
+      <ul>
+        <li><a href="#">Your Course</a></li>
+        <li><a href="#">Course Material</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>Request a Course</h2>
+      <ul>
+        <li><a href="#">Make a Request</a></li>
+        <li><a href="#">Status</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>General</h2>
+      <ul>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Additional Information</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col6">
+  <div id="copyright">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">ORS</a></p>
+    <p class="fl_right">Template by Developer</a></p>
+    <br class="clear" />
+  </div>
+</div>
+</body>
+</html>

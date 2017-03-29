@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Template Name: Educational
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Home</title> {% load staticfiles %}
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="{% static 'static_dirs/layout/styles/layout.css' %}" type="text/css" />
+<script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.slidepanel.setup.js' %}"></script>
+</head>
+<body>
+
+<div class="wrapper col0">
+  <div id="topbar">
+    <div id="slidepanel">
+      <div align="center" style="padding :10px;">
+        <h2>Notifications</h2>
+          <div style="overflow:scroll; height: 80px;">No Notification</div>
+        <!--<p class="readmore"><a href="#">Continue Reading &raquo;</a></p> -->
+      </div>
+        <br class="clear" />
+    </div>
+    <div id="loginpanel">
+      <ul>
+        <li class="left"><font color="red"> New Content </font>&raquo;</li>
+        <li class="right" id="toggle"><a id="slideit" href="#slidepanel">Notifications</a><a id="closeit" style="display: none;" href="#slidepanel">Close Panel</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+
+<!-- ####################################################################################################### -->
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo">
+      <h1><a href="../index.html">Manage Course</a></h1>
+      <p>Admin</p>
+    </div>
+    <div class="fl_right">
+     <ul>
+        <li class="last"><a href="#">Search</a></li>
+        <li><a href="/edit_profile/">Edit Profile</a></li>
+        <li><a href="/login/">Signout</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="topnav">
+    <ul>
+      <li><a href="/adminprofile/">Home</a>
+
+      </li>
+      <li><a href="/manage_user/">Manage User</a>
+
+      </li>
+      <li class="active"><a href="/manage_course/">Manage Courses</a>
+
+      </li>
+      <li class="last"><a href="/payment_details/">View Payment Details</a></li>
+    </ul>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="breadcrumb">
+    <ul>
+      <li class="first">You Are Here</li>
+      <li>&#187;</li>
+        <li><a href="/manage_course/">Manage Course</a></li>
+        <li>&#187;</li>
+      <li><a href="#">Show Course</a></li>
+    </ul>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+  <div id="container" style="height:500px;">
+    <div id="content">
+      <!--  {% for s in details %}
+      <center><img src="{{ s.profile_pic.url }}" width="200px" height="180px"></center>
+      {% endfor %}-->
+        <br>
+      {% for data in data %}
+      <center><img src="{{ data.image.url }}" width="250" height="200"></center>
+      <br>
+        <table border="1">
+
+        <thead>
+            <th>{{ data.title }}</th>
+        </thead>
+        </table>
+        <table>
+        <tr>
+            <th>Description</th>
+            <td>{{ data.description }}</td>
+        </tr>
+        <tr>
+            <th>Status</th>
+            <td>{{ data.status }}</td>
+        </tr>
+        <tr>
+            <th>Duration</th>
+            <td>{{ data.duration }}</td>
+        </tr>
+        <tr>
+            <th>Fees</th>
+            <td>{{ data.fees }}</td>
+        </tr>
+
+    </table>
+      <center><form action="/delete_course/" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="id" value="{{ data.id }}" id="id">
+                    <input type="submit" value="Delete">
+                </form></center>
+
+      {% endfor %}
+      <div id="respond">
+
+      </div>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col5">
+  <div id="footer">
+  <div class="footbox">
+      <h2>Settings</h2>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>Manage Courses</h2>
+      <ul>
+        <li><a href="#">All Courses</a></li>
+        <li><a href="#">Courses Details</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>View Payment Details</h2>
+      <ul>
+        <li><a href="#">Manage Details</a></li>
+        <li><a href="#">Status</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>Manage User</h2>
+      <ul>
+        <li><a href="/manage_user/">All Users</a></li>
+        <li><a href="#">User Details</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col6">
+  <div id="copyright">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">ORS</a></p>
+    <p class="fl_right">Template by Developer</a></p>
+    <br class="clear" />
+  </div>
+</div>
+</body>
+</html>
