@@ -8,19 +8,19 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>My Course</title>{% load staticfiles %}
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Payment Details</title> {% load staticfiles %}
 <link rel="stylesheet" href="{% static 'static_dirs/layout/styles/layout.css' %}" type="text/css" />
 <script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.slidepanel.setup.js' %}"></script>
 </head>
 <body>
+
 <div class="wrapper col0">
   <div id="topbar">
     <div id="slidepanel">
       <div align="center" style="padding :10px;">
         <h2>Notifications</h2>
-          <div style="overflow:scroll; height: 80px;"><marquee direction="up"><center><p>1.New Materials Added</p><p>2.New Materials Added</p><p>3.New Materials Added</p><p>4.New Materials Added</p><p>5.New Materials Added</p></center></marquee></div>
+          <div style="overflow:scroll; height: 80px;">No Notification</div>
         <!--<p class="readmore"><a href="#">Continue Reading &raquo;</a></p> -->
       </div>
         <br class="clear" />
@@ -34,18 +34,19 @@ Licence URI: http://www.os-templates.com/template-terms
     <br class="clear" />
   </div>
 </div>
+
 <!-- ####################################################################################################### -->
 <div class="wrapper col1">
   <div id="header">
     <div id="logo">
-      <h1><a href="../index.html">Profile</a></h1>
-      <p>General Information</p>
+      <h1><a href="../index.html">Payment Details</a></h1>
+      <p>Admin</p>
     </div>
     <div class="fl_right">
      <ul>
         <li class="last"><a href="#">Search</a></li>
-        <li><a href="#">Feedback</a></li>
-        <li><a href="#">Signout</a></li>
+        <li><a href="/edit_profile/">Edit Profile</a></li>
+        <li><a href="/login/">Signout</a></li>
       </ul>
     </div>
     <br class="clear" />
@@ -55,30 +56,16 @@ Licence URI: http://www.os-templates.com/template-terms
 <div class="wrapper col2">
   <div id="topnav">
     <ul>
-      <li><a href="/dashboard/">Home</a>
-        <ul>
-          <li><a href="#">Learning Courses</a></li>
-          <li><a href="#">Requests</a></li>
-          <li><a href="#">Notifications</a></li>
-          <li class="last"><a href="#">Schedule</a></li>
-        </ul>
-      </li>
-      <li><a href="/profile/">Profile</a>
-        <ul>
-          <li><a href="#">Personal Information</a></li>
-          <li><a href="#">Edit Profile</a></li>
-          <li class="last"><a href="#">Account Settings</a></li>
-        </ul>
-      </li>
-      <li class="active"><a href="/usercourses/">Courses</a>
-        <ul>
-          <li><a href="#">My Courses</a></li>
-          <li><a href="#">Course Material</a></li>
-          <li class="last"><a href="#">Course Schedule</a></li>
-        </ul>
-      </li>
+      <li><a href="/adminprofile/">Home</a>
 
-      <li class="last"><a href="/contact/">Contact Us</a></li>
+      </li>
+      <li><a href="/manage_user/">Manage User</a>
+
+      </li>
+      <li><a href="/manage_course/">Manage Courses</a>
+
+      </li>
+      <li class="active"><a href="/payment_details/">View Payment Details</a></li>
     </ul>
   </div>
 </div>
@@ -88,59 +75,46 @@ Licence URI: http://www.os-templates.com/template-terms
     <ul>
       <li class="first">You Are Here</li>
       <li>&#187;</li>
-      <li><a href="/dashboard/">Home</a></li>
-      <li>&#187;</li>
-      <li><a href="/usercourses/">Courses</a></li>
-        <li>&#187;</li>
-        <li><a href="/view_course/">View Course</a></li>
+      <li><a href="#">User Details</a></li>
     </ul>
   </div>
 </div>
 <!-- ####################################################################################################### -->
 <div class="wrapper col4">
-  <div id="container">
-    <div id="content" style="height:600px;">
-        {% for data in data %}
-      <center><img src="{{data.image.url}}" width="200" height="150"></center><br>
-      <table>
-        <thead>
-      <th>{{ data.title }}</th>
-        </thead>
-        </table>
-         <table border="1">
+  <div id="container" style="height:500px;">
+    <div id="content">
+      <!--  {% for s in details %}
+      <center><img src="{{ s.profile_pic.url }}" width="200px" height="180px"></center>
+      {% endfor %}-->
+        <br>
+   <table>
+       <thead>
+       <th>Name</th>
+       <th>Course</th>
+       <th>Paid</th>
+       <th>Transaction ID</th>
+       <th>Instructor</th>
+       </thead>
+       <tr>
 
-        <tr>
-            <th>Title</th>
-            <td>{{ data.title }}</td>
-        </tr>
-        <tr>
-            <th>Description</th>
-            <td>{{ data.description }}</td>
-        </tr>
-        <tr>
-            <th>Status</th>
-            <td>{{ data.status }}</td>
-        </tr>
-        <tr>
-            <th>Duration</th>
-            <td>{{ data.duration }}</td>
-        </tr>
-        <tr>
-            <th>Fees</th>
-            <td>{{ data.fees }}</td>
-        </tr>
+           {% for order in order %}
+           <td>{{data.username}}</td>
+           <td>{{order.order_item_id.course_Id}}</td>
+           <td>{{order.order_item_id.Total_Amount}}</td>
+           <td>{{order.transaction_id}}</td>
+           <td>{{instructor.instructor_id.firstname}}{{display}} <a href="#">Change Instructor</a></td>
+           {% endfor %}
+
+       </tr>
     </table>
-        <center><form action="/order/" method="post">
-                    {% csrf_token %}
-                    <input type="hidden" name="id" value="{{ data.id }}" id="id">
-                    <input type="submit" value="Add to Cart">
-                </form></center>
-        {% endfor %}
+      <div id="respond">
+
+      </div>
     </div>
+
     <div class="clear"></div>
   </div>
 </div>
-
 <!-- ####################################################################################################### -->
 <div class="wrapper col5">
   <div id="footer">
@@ -152,24 +126,24 @@ Licence URI: http://www.os-templates.com/template-terms
       </ul>
     </div>
     <div class="footbox">
-      <h2>Courses</h2>
+      <h2>Manage Courses</h2>
       <ul>
-        <li><a href="#">Your Course</a></li>
-        <li><a href="#">Course Material</a></li>
+        <li><a href="#">All Courses</a></li>
+        <li><a href="#">Courses Details</a></li>
       </ul>
     </div>
     <div class="footbox">
-      <h2>Request a Course</h2>
+      <h2>View Payment Details</h2>
       <ul>
-        <li><a href="#">Make a Request</a></li>
+        <li><a href="#">Manage Details</a></li>
         <li><a href="#">Status</a></li>
       </ul>
     </div>
     <div class="footbox">
-      <h2>General</h2>
+      <h2>Manage User</h2>
       <ul>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Additional Information</a></li>
+        <li><a href="/manage_user/">All Users</a></li>
+        <li><a href="#">User Details</a></li>
       </ul>
     </div>
     <br class="clear" />

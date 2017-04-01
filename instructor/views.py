@@ -26,12 +26,16 @@ def instructor_courses(request):
 
 def add_material(request):
     if request.user.is_authenticated():
+        user = request.user
         form = material_form(request.POST, request.FILES or None)
+        icourse = instructor_course.objects.filter( instructor_id = user.id )
+        courseid = icourse.values()[0]['id']
+        print courseid
         if request.POST:
             if form.is_valid():
                 form.save()
                 return redirect('instructor_course')
-        return render(request,'add_material.html',{'form':form})
+        return render(request,'add_material.html',{'form':form,'course_id':courseid})
 
 
 

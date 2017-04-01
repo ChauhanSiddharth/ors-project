@@ -9,7 +9,8 @@ from .views import (
 show_details,
 manage_user,
 manage_course,
-admin_changePassword
+admin_changePassword,
+Payment_Details
 )
 
 
@@ -24,5 +25,6 @@ url(r'^delete_course/', delete_course, name="delete_course"),
 url(r'^usercourses/', courses , name="courses"),
 url(r'^view_course/',view_course, name="view_course"),
 url(r'^dashboard/',Dashboard, name="Dashboard"),
-url(r'^changepassword/', admin_changePassword, name="AdminPassword")
+url(r'^changepassword/', admin_changePassword, name="AdminPassword"),
+url(r'^payment_details/', Payment_Details, name="Payment_Details"),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

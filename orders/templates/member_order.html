@@ -1,14 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--
-Template Name: Educational
-Author: <a href="http://www.os-templates.com/">OS Templates</a>
-Author URI: http://www.os-templates.com/
-Licence: Free to use under our free template licence terms
-Licence URI: http://www.os-templates.com/template-terms
--->
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>My Course</title>{% load staticfiles %}
+<title>Order</title>{% load staticfiles %}
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link rel="stylesheet" href="{% static 'static_dirs/layout/styles/layout.css' %}" type="text/css" />
 <script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.min.js' %}"></script>
@@ -45,7 +39,7 @@ Licence URI: http://www.os-templates.com/template-terms
      <ul>
         <li class="last"><a href="#">Search</a></li>
         <li><a href="#">Feedback</a></li>
-        <li><a href="#">Signout</a></li>
+        <li><a href="/login/">Signout</a></li>
       </ul>
     </div>
     <br class="clear" />
@@ -93,6 +87,8 @@ Licence URI: http://www.os-templates.com/template-terms
       <li><a href="/usercourses/">Courses</a></li>
         <li>&#187;</li>
         <li><a href="/view_course/">View Course</a></li>
+        <li>&#187;</li>
+        <li class="current"><a href="/order/">Order</a></li>
     </ul>
   </div>
 </div>
@@ -100,42 +96,35 @@ Licence URI: http://www.os-templates.com/template-terms
 <div class="wrapper col4">
   <div id="container">
     <div id="content" style="height:600px;">
-        {% for data in data %}
-      <center><img src="{{data.image.url}}" width="200" height="150"></center><br>
-      <table>
-        <thead>
-      <th>{{ data.title }}</th>
-        </thead>
-        </table>
-         <table border="1">
-
-        <tr>
-            <th>Title</th>
-            <td>{{ data.title }}</td>
-        </tr>
-        <tr>
-            <th>Description</th>
-            <td>{{ data.description }}</td>
-        </tr>
-        <tr>
-            <th>Status</th>
-            <td>{{ data.status }}</td>
-        </tr>
-        <tr>
-            <th>Duration</th>
-            <td>{{ data.duration }}</td>
-        </tr>
-        <tr>
-            <th>Fees</th>
-            <td>{{ data.fees }}</td>
-        </tr>
-    </table>
-        <center><form action="/order/" method="post">
-                    {% csrf_token %}
-                    <input type="hidden" name="id" value="{{ data.id }}" id="id">
-                    <input type="submit" value="Add to Cart">
-                </form></center>
-        {% endfor %}
+        <h2>Review Course Details Before Ordering</h2>
+     <table>
+         {% for data in data %}
+         <thead>
+         <th>Title</th>
+         <th>Description</th>
+         <th>Fees</th>
+         </thead>
+         <tr>
+             <td>{{data.title}}</td>
+             <td>{{data.description}}</td>
+             <td>{{data.fees}}</td>
+         </tr>
+         {% endfor %}
+     </table>
+        <form action="{{ action }}" method="post">{% csrf_token %}
+            <h2>Pay Now</h2>
+              <table>
+                <!--{% for fields in form %}
+                <tr><td>{{ fields.label_tag }}</td><td>{{ fields }}</td></tr>
+                {% endfor %}-->
+                {% for data in data %}
+                <tr><td>Course:<input type="text" id="course_Id" name="course_Id" value="{{data.id}}"></td></tr>
+                <tr><td>Member:<input type="text" id="member_id" name="member_id" value="{{member_id}}"></td></tr>
+                <tr><td>Total Amount:<input type="text" value="{{data.fees}}" id="Total_Amount" name="Total_Amount"></td></tr>
+                  {% endfor %}
+              </table>
+            <center><input type="submit" value="Order"></center>
+        </form>
     </div>
     <div class="clear"></div>
   </div>

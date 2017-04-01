@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 from member.views import changePassword, DeleteAccount, editProfile ,MemberProfile
 from admin_user.views import AdminProfile
 from contact.views import Contact_View
+from orders.views import new_order,Payment_Gateway
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -34,5 +35,7 @@ urlpatterns = [
     url(r'^editprofile/', editProfile),
     url(r'^profile/', MemberProfile),
     url(r'^contact/', Contact_View),
+    url(r'^order/', new_order),
+    url(r'^payment/', Payment_Gateway),
 
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

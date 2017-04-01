@@ -137,13 +137,16 @@ input[type=submit] {
   <div id="container">
     <div id="content" style="height:600px;">
       <h2>Add Material</h2>
-       <form enctype="multipart/form-data" action="/add_material/" method="POST">{% csrf_token %}
+       <form enctype="multipart/form-data" action="{{ action }}" method="POST">{% csrf_token %}
          <table>
-           {% for fields in form %}
+           <!--{% for fields in form %}
                 <tr><td>{{ fields.label_tag }} &nbsp; {{ fields }}</td></tr>
-                {% endfor %}
+                {% endfor %}-->
+           <tr><td><input type="hidden" id="course_id" name="course_id" value="{{course_id}}" ></td></tr>
+           <tr><td>Material Name: {{form.mname}}</td></tr>
+           <tr><td>Files: {{form.files}}</td></tr>
          </table>
-        <input type="submit">
+        <input type="submit" value="Add Material">
     </form>
 
 

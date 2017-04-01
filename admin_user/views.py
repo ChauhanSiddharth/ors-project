@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from course.models import course_details,member_course,instructor_course
+from orders.models import Orders,Orders_Item
 
 # Create your views here.
 
@@ -62,4 +63,25 @@ def admin_changePassword(request):
         else:
             return render(request, 'edit_profile.html')
 
+def Payment_Details(request):
+    if request.user.is_authenticated():
+        # id = 16, id = 3
+        users = User.objects.get( id = 16 )
+        Userdata = UserProfile.objects.filter( user = users )
+        print users
+        print Userdata
+        order_item = Orders_Item.objects.filter( member_id=users )
+        print order_item
+        order = Orders.objects.filter( order_item_id_id = order_item )
+        print order
+        course_id = order_item.values()[0]['order_item_id']
+        print course_id
+        instructor = instructor_course.objects.filter( )
+        context = {
+            "order": order,
+            "instructor": instructor,
+            'data':users,
+            'display': "None"
+        }
+        return render(request, 'payment_details.html', context  )
 
