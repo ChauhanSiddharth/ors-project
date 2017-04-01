@@ -96,7 +96,7 @@
 <div class="wrapper col4">
   <div id="container">
     <div id="content" style="height:600px;">
-        <h2>Review Course Details Before Ordering</h2>
+        <h2>Pay Now</h2>
      <table>
          {% for data in data %}
          <thead>
@@ -112,17 +112,15 @@
          {% endfor %}
      </table>
         <form action="{{ action }}" method="post">{% csrf_token %}
-            <h2>Pay Now</h2>
-              <table>
                 <!--{% for fields in form %}
                 <tr><td>{{ fields.label_tag }}</td><td>{{ fields }}</td></tr>
                 {% endfor %}-->
                 {% for data in data %}
-                <tr><td>Course:<input type="text" id="course_Id" name="course_Id" value="{{data.id}}"></td></tr>
-                <tr><td>Member:<input type="text" id="member_id" name="member_id" value="{{member_id}}"></td></tr>
-                <tr><td>Total Amount:<input type="text" value="{{data.fees}}" id="Total_Amount" name="Total_Amount"></td></tr>
+                <input type="hidden" id="course_Id" name="course_Id" value="{{data.id}}">
+                <input type="hidden" id="member_id" name="member_id" value="{{member_id}}">
+                <input type="hidden" value="{{data.fees}}" id="Total_Amount" name="Total_Amount">
                   {% endfor %}
-              </table>
+
             <center><input type="submit" value="Order"></center>
         </form>
     </div>
