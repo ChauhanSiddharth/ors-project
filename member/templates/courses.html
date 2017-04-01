@@ -13,6 +13,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <link rel="stylesheet" href="{% static 'static_dirs/layout/styles/layout.css' %}" type="text/css" />
 <script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.slidepanel.setup.js' %}"></script>
+<script type="text/javascript" src="{% static 'static_dirs/js/searchstyle.js' %}"></script>
   <style>
 #search_submit {
     width: 20%;
@@ -182,7 +183,6 @@ a.gallerypic:hover span.zoom-icon{
   </form>
   </span></a>
     {% endfor %}-->
-<script type="text/javascript" src="{% static 'static_dirs/js/searchstyle.js' %}"></script>
   <form type="get" action="/searchbox/" style="margin: 0">
     <input  id="myInput" type="text" name="search_box" onkeyup="searchFunction()" placeholder="Search..." >
     &nbsp;
