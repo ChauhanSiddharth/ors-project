@@ -7,6 +7,11 @@
 <link rel="stylesheet" href="{% static 'static_dirs/layout/styles/layout.css' %}" type="text/css" />
 <script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.slidepanel.setup.js' %}"></script>
+  <style>
+    li {
+    float: left;
+    }
+  </style>
 </head>
 <body>
 <div class="wrapper col0">
@@ -89,18 +94,25 @@
   <div id="container">
     <div id="content" style="height:600px;">
         {{display}}
+      <h2>Enter Credit Card Details</h2>
+              <ul style="list-style-type:none;">
+                <li>
+                  <a href="#"> <img src="{% static 'static_dirs/img/visa.png'%}" height="50" width="50"></a>
+                </li>
+                <li>
+                  <a href="#"> <img src="{% static 'static_dirs/img/mastercard.png'%}" height="50" width="50"></a>
+                </li>
+              </ul>
+      <br><br><br><br>
         <form action="{{ action }}" method="post">{% csrf_token %}
-            <h2>Payment Method</h2>
-              <table>
+
                 <!--{% for fields in form %}
                 <tr><td>{{ fields.label_tag }}</td><td>{{ fields }}</td></tr>
                 {% endfor %}-->
 
-                <tr><td>Order Item:<input type="text" id="order_item_id" name="order_item_id" value="{{order_id}}"></td></tr>
-                <tr><td>Card Number:<input type="text" id="transaction_id" name="transaction_id"></td></tr>
-
-              </table>
-            <center><input type="submit" value="Order"></center>
+                <input type="hidden" id="order_item_id" name="order_item_id" value="{{order_id}}">
+                Card Number:<input type="text" id="transaction_id" name="transaction_id">
+            <input type="submit" value="Order">
         </form>
     </div>
     <div class="clear"></div>
