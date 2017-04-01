@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from .form import Order_ItemForm,OrdersForm
 from .models import Orders_Item,Orders
 from django.http import HttpResponse
-from course.models import course_details
+from course.models import course_details, member_course
 from login.models import User
 # Create your views here.
 
@@ -46,7 +46,9 @@ def Payment_Gateway(request):
         if request.POST:
             if form.is_valid():
                 form.save()
-                return redirect('/login/')
+                data = course_details.objects.all()
+                mycourse = member_course.objects.filter(member_id=user.id)
+                return render(request, 'courses.html', {'data': data, 'mycourse': mycourse,'display':"Course Requested"})
         else:
             context = {
                 "form": order_form,
