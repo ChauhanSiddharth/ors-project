@@ -66,28 +66,25 @@ def admin_changePassword(request):
 def Payment_Details(request):
     if request.user.is_authenticated():
         # id = 16, id = 3
-        users = User.objects.get( id = 16 )
-        Userdata = UserProfile.objects.filter( user = users )
-        print users
-        print Userdata
-        if users.userprofile.usertype == 'member':
-            try:
-                order_item = Orders_Item.objects.filter( member_id=users )
-                print order_item
-                order = Orders.objects.filter( order_item_id_id = order_item )
-                print order
-                course_id = order_item.values()[0]['order_item_id']
-                print course_id
-                instructor = instructor_course.objects.filter( )
-                context = {
-                    "order": order,
-                    "instructor": instructor,
-                    'data':users,
-                    'display': "None"
-                }
-                return render(request, 'payment_details.html', context)
-            except Exception:
-                return render(request, 'payment_details.html')
-        else:
-            return render(request, 'payment_details.html')
+        data = UserProfile.objects.filter(usertype = "member")
+        for id in [0,1,2]:
+            print data.values()[id]['user_id']
+        users = User.objects.all()
+        for id in users:
+            print id
+            #if users.userprofile.usertype == 'member':
+            order_item = Orders_Item.objects.filter( member_id=id )
+            print order_item
+            order = Orders.objects.filter( order_item_id_id = order_item )
+            print order
+            course_id = order_item.values()[0]['order_item_id']
+            print course_id
+            instructor = instructor_course.objects.filter()
+        context = {
+            "order": order,
+            "instructor": instructor,
+            'data':users,
+            'display': "None"
+            }
+        return render(request, 'payment_details.html', context)
 
