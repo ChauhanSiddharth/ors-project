@@ -11,6 +11,10 @@
     li {
     float: left;
     }
+    input[type=number]{
+      width: 50px;
+    }
+
   </style>
 </head>
 <body>
@@ -112,6 +116,9 @@
 
                 <input type="hidden" id="order_item_id" name="order_item_id" value="{{order_id}}">
                 Card Number:<input type="text" id="transaction_id" name="transaction_id">
+                <input type="number">
+              <br><br>
+                Month/Year:&nbsp;&nbsp;&nbsp;<input type="number">&nbsp;/&nbsp;<input type="number"><br><br>
             <input type="submit" value="Order">
         </form>
     </div>

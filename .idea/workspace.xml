@@ -4,7 +4,7 @@
     <list default="true" id="cdc966af-72d0-4a79-8f17-c7faf1bacf7f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orders/views.py" afterPath="$PROJECT_DIR$/orders/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orders/templates/payment_gateway.html" afterPath="$PROJECT_DIR$/orders/templates/payment_gateway.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/orders/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="50" column="118" selection-start-line="50" selection-start-column="118" selection-end-line="50" selection-end-column="118" />
+            <state relative-caret-position="660">
+              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -54,13 +54,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="payment_gateway.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="payment_gateway.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/orders/templates/payment_gateway.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2310">
-              <caret line="105" column="22" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
+            <state relative-caret-position="352">
+              <caret line="118" column="37" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4612#4618#0" expanded="true" />
+                <element signature="e#4618#4624#0" expanded="true" />
+                <element signature="e#4624#4630#0" expanded="true" />
+                <element signature="e#4651#4657#0" expanded="true" />
+                <element signature="e#4658#4664#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,9 +151,9 @@
         <option value="$PROJECT_DIR$/admin_user/views.py" />
         <option value="$PROJECT_DIR$/instructor/views.py" />
         <option value="$PROJECT_DIR$/instructor/templates/add_material.html" />
-        <option value="$PROJECT_DIR$/orders/templates/payment_gateway.html" />
         <option value="$PROJECT_DIR$/orders/templates/member_order.html" />
         <option value="$PROJECT_DIR$/orders/views.py" />
+        <option value="$PROJECT_DIR$/orders/templates/payment_gateway.html" />
       </list>
     </option>
   </component>
@@ -493,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491059633557</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="payment edit 4">
+      <created>1491061212786</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1491061212786</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -548,7 +560,8 @@
     <MESSAGE value="payment details, method and material form edited" />
     <MESSAGE value="payment edit 2" />
     <MESSAGE value="payment edit 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="payment edit 3" />
+    <MESSAGE value="payment edit 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="payment edit 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -859,16 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/orders/templates/payment_gateway.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="105" column="22" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/orders/templates/member_order.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
@@ -895,10 +898,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/orders/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="50" column="118" selection-start-line="50" selection-start-column="118" selection-end-line="50" selection-end-column="118" />
+        <state relative-caret-position="660">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orders/templates/payment_gateway.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="118" column="37" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4612#4618#0" expanded="true" />
+            <element signature="e#4618#4624#0" expanded="true" />
+            <element signature="e#4624#4630#0" expanded="true" />
+            <element signature="e#4651#4657#0" expanded="true" />
+            <element signature="e#4658#4664#0" expanded="true" />
           </folding>
         </state>
       </provider>
