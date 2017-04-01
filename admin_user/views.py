@@ -70,18 +70,24 @@ def Payment_Details(request):
         Userdata = UserProfile.objects.filter( user = users )
         print users
         print Userdata
-        order_item = Orders_Item.objects.filter( member_id=users )
-        print order_item
-        order = Orders.objects.filter( order_item_id_id = order_item )
-        print order
-        course_id = order_item.values()[0]['order_item_id']
-        print course_id
-        instructor = instructor_course.objects.filter( )
-        context = {
-            "order": order,
-            "instructor": instructor,
-            'data':users,
-            'display': "None"
-        }
-        return render(request, 'payment_details.html', context  )
+        if users.userprofile.usertype == 'member':
+            try:
+                order_item = Orders_Item.objects.filter( member_id=users )
+                print order_item
+                order = Orders.objects.filter( order_item_id_id = order_item )
+                print order
+                course_id = order_item.values()[0]['order_item_id']
+                print course_id
+                instructor = instructor_course.objects.filter( )
+                context = {
+                    "order": order,
+                    "instructor": instructor,
+                    'data':users,
+                    'display': "None"
+                }
+                return render(request, 'payment_details.html', context)
+            except Exception:
+                return render(request, 'payment_details.html')
+        else:
+            return render(request, 'payment_details.html')
 
