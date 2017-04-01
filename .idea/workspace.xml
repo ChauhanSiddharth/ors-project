@@ -1,76 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc966af-72d0-4a79-8f17-c7faf1bacf7f" name="Default" comment="second commit&#10;">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/new_2.html" afterPath="" />
+    <list default="true" id="cdc966af-72d0-4a79-8f17-c7faf1bacf7f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/css/style.css" afterPath="$PROJECT_DIR$/login/static/static_dirs/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/css/stylel.css" afterPath="$PROJECT_DIR$/login/static/static_dirs/css/stylel.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/js/script.js" afterPath="$PROJECT_DIR$/login/static/static_dirs/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.min.js" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.slidepanel.setup.js" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.slidepanel.setup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.tabs.setup.js" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.tabs.setup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.ui.min.js" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/scripts/jquery.ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/featured_slide.css" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/featured_slide.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/forms.css" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/forms.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/layout.css" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/loginslider.css" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/loginslider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/navi.css" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/navi.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/tables.css" afterPath="$PROJECT_DIR$/login/static/static_dirs/layout/styles/tables.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/admin/fonts/LICENSE.txt" afterPath="$PROJECT_DIR$/login/static/static_root/admin/fonts/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.min.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.ui.min.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/scripts/jquery.ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/featured_slide.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/featured_slide.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/forms.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/forms.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/layout.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/loginslider.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/loginslider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/navi.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/navi.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/tables.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_dirs/layout/styles/tables.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/admin/fonts/LICENSE.txt" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/admin/fonts/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.min.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.ui.min.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/scripts/jquery.ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/featured_slide.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/featured_slide.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/forms.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/forms.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/layout.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/loginslider.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/loginslider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/navi.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/navi.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/tables.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_dirs/layout/styles/tables.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/fonts/LICENSE.txt" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/admin/fonts/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.min.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.ui.min.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/featured_slide.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/featured_slide.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/forms.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/forms.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/layout.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/loginslider.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/loginslider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/navi.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/navi.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/tables.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_dirs/layout/styles/tables.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/fonts/LICENSE.txt" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/admin/fonts/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.min.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.slidepanel.setup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.tabs.setup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.ui.min.js" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/scripts/jquery.ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/featured_slide.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/featured_slide.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/forms.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/forms.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/layout.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/loginslider.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/loginslider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/navi.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/navi.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/tables.css" afterPath="$PROJECT_DIR$/login/static/static_root/static_root/static_root/static_root/static_dirs/layout/styles/tables.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/forms.html" afterPath="$PROJECT_DIR$/login/templates/forms.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/home.html" afterPath="$PROJECT_DIR$/login/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/login.html" afterPath="$PROJECT_DIR$/login/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/profile.html" afterPath="$PROJECT_DIR$/login/templates/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/script.js" afterPath="$PROJECT_DIR$/login/templates/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/style.css" afterPath="$PROJECT_DIR$/login/templates/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/material/mad.html" afterPath="$PROJECT_DIR$/media/material/mad.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/resume/mad.html" afterPath="$PROJECT_DIR$/media/resume/mad.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/resume/mad_hSyXojs.html" afterPath="$PROJECT_DIR$/media/resume/mad_hSyXojs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ors/settings.py" afterPath="$PROJECT_DIR$/ors/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,22 +21,12 @@
     <favorites_list name="ors" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/instructor/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/instructor/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+            <state relative-caret-position="110">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -113,7 +37,7 @@
       <file leaf-file-name="add_material.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/instructor/templates/add_material.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
+            <state relative-caret-position="2860">
               <caret line="130" column="24" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="24" />
               <folding />
             </state>
@@ -142,8 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin_user/template/admin.html" />
-        <option value="$PROJECT_DIR$/admin_user/template/show_details.html" />
         <option value="$PROJECT_DIR$/admin_user/template/manage_user.html" />
         <option value="$PROJECT_DIR$/login/models.py" />
         <option value="$PROJECT_DIR$/admin_user/templates/manage_user.html" />
@@ -186,13 +108,15 @@
         <option value="$PROJECT_DIR$/member/templates/courses.html" />
         <option value="$PROJECT_DIR$/course/views.py" />
         <option value="$PROJECT_DIR$/schedule/models.py" />
-        <option value="$PROJECT_DIR$/ors/settings.py" />
         <option value="$PROJECT_DIR$/class_details/models.py" />
         <option value="$PROJECT_DIR$/class_details/admin.py" />
         <option value="$PROJECT_DIR$/schedule/admin.py" />
         <option value="$PROJECT_DIR$/schedule/templates/add_schedule.py" />
         <option value="$PROJECT_DIR$/schedule/templates/add_schedule.html" />
         <option value="$PROJECT_DIR$/instructor/views.py" />
+        <option value="$PROJECT_DIR$/orders/models.py" />
+        <option value="$PROJECT_DIR$/orders/admin.py" />
+        <option value="$PROJECT_DIR$/ors/settings.py" />
       </list>
     </option>
   </component>
@@ -226,26 +150,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -270,6 +174,26 @@
             <PATH_ELEMENT USER_OBJECT=".idea">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -456,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490808194463</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="third commit">
+      <created>1490809370971</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1490809370971</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -472,23 +403,23 @@
     <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24895833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24895833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -505,41 +436,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="second commit&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit&#10;" />
+    <MESSAGE value="third commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="third commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/instructor/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/course/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_user/templates/manage_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="84" column="43" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instructor/templates/material.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/instructor/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -675,16 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/course/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/templates/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -759,7 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
           <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="161" column="6" selection-start-line="161" selection-start-column="6" selection-end-line="164" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -775,7 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
           <caret line="216" column="19" selection-start-line="216" selection-start-column="19" selection-end-line="216" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,9 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -793,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -801,9 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -811,17 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="37" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ors/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -830,7 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -838,7 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="18" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -846,15 +717,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/instructor/templates/add_material.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="2860">
           <caret line="130" column="24" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="24" />
           <folding />
         </state>
@@ -862,16 +730,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/instructor/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="506">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instructor/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ors/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="40" column="94" selection-start-line="40" selection-start-column="94" selection-end-line="40" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orders/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orders/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/instructor/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        <state relative-caret-position="110">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
