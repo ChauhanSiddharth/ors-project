@@ -87,6 +87,7 @@ Licence URI: http://www.os-templates.com/template-terms
       <center><img src="{{ s.profile_pic.url }}" width="200px" height="180px"></center>
       {% endfor %}-->
         <br>
+
    <table>
        <thead>
        <th>Name</th>
@@ -95,18 +96,22 @@ Licence URI: http://www.os-templates.com/template-terms
        <th>Transaction ID</th>
        <th>Instructor</th>
        </thead>
+       {% for id in data %}
        <tr>
 
-           {% for order in order %}
-           <td>{{data.username}}</td>
-           <td>{{order.order_item_id.course_Id}}</td>
+           <td>{{id}}</td>
+           <!--<td>{{order.order_item_id.course_Id}}</td>
            <td>{{order.order_item_id.Total_Amount}}</td>
-           <td>{{order.transaction_id}}</td>
+           <td>{{order.transaction_id}}</td>-->
+           <td>{% for orderitem in orderitem %}{{orderitem.course_Id}}<br>{% endfor %}</td>
+           <td>{% for orderitem in orderitem %}{{orderitem.Total_Amount}}<br>{% endfor %}</td>
+           <td>{% for order in order %}{{order.transaction_id}}<br>{% endfor %}</td>
            <td>{{instructor.instructor_id.firstname}}{{display}} <a href="#">Change Instructor</a></td>
-           {% endfor %}
 
        </tr>
+       {% endfor %}
     </table>
+
       <div id="respond">
 
       </div>
