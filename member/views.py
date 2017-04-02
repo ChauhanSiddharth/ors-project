@@ -1,10 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
 from django.contrib.auth.models import User
 from django.contrib.auth import password_validation
 from login.models import UserProfile
-from course.models import course_details, instructor_course
+from course.models import course_details, instructor_course, member_course, material
 from login.forms import User_Form, Details_Form
 # Create your views here.
 
@@ -43,6 +43,7 @@ def DeleteAccount(request):
 def editProfile(request):
     if request.user.is_authenticated():
         user = request.user
+
         if request.POST:
             firstname = request.POST.get('firstname')
             middlename = request.POST.get('middlename')
@@ -52,6 +53,10 @@ def editProfile(request):
             state = request.POST.get('state')
             contact = request.POST.get('contact')
             skills = request.POST.get('skills')
+            if request.FILES:
+                image = UserProfile.objects.get(user = user)
+                image.profile_pic = request.FILES['profile_pic']
+                image.save()
             qualification = request.POST.get('qualification')
             UserProfile.objects.filter(user = user.id).update(firstname = firstname)
             UserProfile.objects.filter(user = user.id).update(middlename = middlename)
@@ -83,3 +88,18 @@ def Dashboard(request):
         coursedata = course_details.objects.filter(title=skills)
         return render(request,'home.html',{'data':data,'course':coursedata})
 
+def My_Course(request):
+    if request.user.is_authenticated():
+        user = request.user
+        mycourse = member_course.objects.filter(member_id=user.id)
+        print mycourse
+        cid = mycourse.values()[0]['course_id_id']
+        print cid
+        myinstructor = instructor_course.objects.filter( course_id_id = cid )
+        print myinstructor
+        materials = material.objects.filter( course_id = myinstructor )
+        print materials
+        if user.userprofile.usertype == 'member':
+            return render(request,'my_course.html',{'mycourse':mycourse,'materials':materials})
+        else:
+            return redirect('instructor_course')

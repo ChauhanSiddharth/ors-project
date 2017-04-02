@@ -171,72 +171,38 @@ a.gallerypic:hover span.zoom-icon{
 <div class="wrapper col4">
   <div id="container">
     <div id="content" style="height:600px;">
-      <h2>All Course</h2>
-    <!--  {% for data in data %}
-      <a href="#" onclick="document.getElementById('myForm','id').submit();" class="gallerypic" title="">
-  <img src="{{ data.image.url }}" height="150" width="200" alt="[Gallery Photo]" class="pic" />
-  <span class="zoom-icon">
-
-  <form id="myForm" action="/view_course/" method="post">{% csrf_token %}
-      <input type="hidden" name="id" value="{{ data.id }}" id="id">
-	<font color="white"></font><input type="submit" value="Request">
-  </form>
-  </span></a>
-    {% endfor %}-->
-  <form type="get" action="/searchbox/" style="margin: 0">
-    <input  id="myInput" type="text" name="search_box" onkeyup="searchFunction()" placeholder="Search..." >
-    &nbsp;
-    <button id="search_submit" type="submit" >Submit</button>
-    <ul id="myUL">
-  {% for data in data %}
-  <li><a href="#">{{ data.title }}</a></li>
-  {% endfor %}
-  </ul>
-
-  </form>
-      <br>
-      <table>
-        {% for course in course %}
-        <thead>
-          <th>Title</th>
-          <th>Description</th>
-        </thead>
-        <tr>
-          <td><form id="myForm" action="/view_course/" method="post">{% csrf_token %}
-      <input type="hidden" name="id" value="{{ course.id }}" id="id">
-	<font color="white"></font><input type="submit" value="{{course.title}}">
-  </form></td>
-          <td>{{ course.description }}</td>
-        </tr>
-        {% endfor %}
-      </table>
-    </div>
-    <div id="column">
-      <div class="subnav">
-      <h2>My Course</h2>
-        {{display}}
-      {% for mycourse in mycourse %}
-      <h3><a href="#">{{mycourse.course_id.title}}</a></h3>
+      <center><h2>My Course</h2></center>
+        {% for mycourse in mycourse %}
       <table>
         <thead>
+        <th>Title</th>
         <th>Description</th>
+        <th>Duration</th>
         </thead>
         <tr>
+          <td align="center">{{mycourse.course_id.title}}</td>
           <td align="center">{{mycourse.course_id.description}}</td>
-        </tr>
-      </table>
-      <table>
-        <thead>
-        <th>Material</th>
-        <th>Schedule</th>
-        </thead>
-        <tr>
-          <td><a href="/my_course/"> <button>Material</button></a></td>
-          <td><a href="/my_course/"> <button>Schedule</button></a></td>
+          <td align="center">{{mycourse.course_id.duration}}</td>
         </tr>
       </table>
       {% endfor %}
-      </div></div>
+      <center><h2>Material</h2></center>
+      <table>
+        <thead>
+        <th>Material Name</th>
+        <th>Date Uploaded</th>
+        <th>Files</th>
+        </thead>
+          {% for materials in materials %}
+        <tr>
+          <td align="center">{{materials.mname}}</td>
+          <td align="center">{{materials.date}}</td>
+          <td align="center"><a href="{{ materials.files.url }}" download><button>Download</button></a></td>
+        </tr>
+          {% endfor %}
+      </table>
+
+    </div>
     <div class="clear"></div>
   </div>
 </div>

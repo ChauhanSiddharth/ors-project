@@ -116,7 +116,7 @@ input:checked + .slider:before {
           <li class="last"><a href="#">Schedule</a></li>
         </ul>
       </li>
-      <li class="active"><a href="/userprofile/">Profile</a>
+      <li class="active"><a href="/profile/">Profile</a>
         <ul>
           <li><a href="#">Personal Information</a></li>
           <li><a href="#">Edit Profile</a></li>
@@ -143,7 +143,7 @@ input:checked + .slider:before {
       <li>&#187;</li>
       <li><a href="/dashboard/">Home</a></li>
       <li>&#187;</li>
-      <li class="current"><a href="/profile">Profile</a></li>
+      <li class="current"><a href="/profile/">Profile</a></li>
     </ul>
   </div>
 </div>
@@ -166,6 +166,7 @@ input:checked + .slider:before {
             <tr><td>Qualification : </td><td><input type="text" value="{{s.qualification}}" id="qualification" name="qualification"></td></tr>
             <tr><td>Contact : </td><td><input type="text" value="{{s.contact}}" id="contact" name="contact"></td></tr>
             <tr><td>Skills : </td><td><input type="text" value="{{s.skills}}" id="skills" name="skills"></td></tr>
+            <tr><td>Profile Pic: </td><td><input type="file" id="profile_pic" name="profile_pic" value="{{s.profile_pic.url}}"></td></tr>
                    {% endfor %}
                     </table>
                 <input type="submit" value="Update">
@@ -190,6 +191,10 @@ input:checked + .slider:before {
           <li><a href="#">Request Status</a>
           </li>
         </ul>
+        <br>
+      {% for s in details %}
+        <img src="{{ s.profile_pic.url }}" width="250px" height="200px">
+      {% endfor %}
       </div>
     </div>
     <div class="clear"></div>

@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.conf import settings
 from login.views import login_views
 from django.conf.urls.static import static
-from member.views import changePassword, DeleteAccount, editProfile ,MemberProfile
+from member.views import changePassword, DeleteAccount, editProfile ,MemberProfile, My_Course
 from admin_user.views import AdminProfile
 from contact.views import Contact_View
 from orders.views import new_order,Payment_Gateway
@@ -37,5 +37,6 @@ urlpatterns = [
     url(r'^contact/', Contact_View),
     url(r'^order/', new_order),
     url(r'^payment/', Payment_Gateway),
+    url(r'^my_course/', My_Course),
 
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

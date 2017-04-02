@@ -164,10 +164,6 @@ Licence URI: http://www.os-templates.com/template-terms
       </div>
     </div>
     <div id="column">
-      {% for s in details %}
-        <img src="{{ s.profile_pic.url }}" width="250px" height="200px">
-        {% endfor %}
-      <br>
       <div class="subnav">
         <h2>Edit Profile</h2>
         <ul>
@@ -182,6 +178,9 @@ Licence URI: http://www.os-templates.com/template-terms
           </li>
         </ul>
         <br>
+         {% for s in details %}
+        <img src="{{ s.profile_pic.url }}" width="250px" height="200px">
+        {% endfor %}
       </div>
 
     </div>
