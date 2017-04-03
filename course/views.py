@@ -6,6 +6,7 @@ from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from course.forms import course_forms,material_forms
 from .models import course_details, member_course
+from class_details.models import Class_Member,Class_Master
 
 
 
@@ -55,10 +56,9 @@ def delete_course(request):
 def courses(request):
     if request.user.is_authenticated():
         user = request.user
-        print user
         data = course_details.objects.all()
-        mycourse = member_course.objects.filter( member_id = user.id )
-        print mycourse
+        class_member = Class_Member.objects.filter( member_id = user.id )
+        mycourse = Class_Master.objects.filter( class_id = class_member )
         if user.userprofile.usertype == 'member':
             return render(request,'courses.html',{'data':data,'mycourse':mycourse})
         else:

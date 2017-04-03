@@ -6,6 +6,8 @@ from django.contrib.auth import password_validation
 from login.models import UserProfile
 from course.models import course_details, instructor_course, member_course, material
 from login.forms import User_Form, Details_Form
+from class_details.models import Class_Master,Class_Member
+
 # Create your views here.
 
 def changePassword(request):
@@ -91,8 +93,8 @@ def Dashboard(request):
 def My_Course(request):
     if request.user.is_authenticated():
         user = request.user
-        mycourse = member_course.objects.filter(member_id=user.id)
-        print mycourse
+        class_member = Class_Member.objects.filter(member_id=user.id)
+        mycourse = Class_Master.objects.filter(class_id=class_member)
         cid = mycourse.values()[0]['course_id_id']
         print cid
         myinstructor = instructor_course.objects.filter( course_id_id = cid )
