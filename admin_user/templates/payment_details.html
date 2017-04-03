@@ -84,29 +84,25 @@ Licence URI: http://www.os-templates.com/template-terms
   <div id="container" style="height:500px;">
     <div id="content">
 
-   <table>
-       <thead>
-       <th>Name</th>
-       <th>Course</th>
-       <th>Paid</th>
-       <th>Transaction ID</th>
-       <th>Instructor</th>
-       </thead>
-       {% for id in data %}
+        <table>
+            <thead>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Paid</th>
+        <th>Transaction ID</th>
+        <th>Instructor</th>
+            </thead>
+       {% for orderall in orderall %}
+
        <tr>
-
-           <td>{{id}}</td>
-           <!--<td>{{order.order_item_id.course_Id}}</td>
-           <td>{{order.order_item_id.Total_Amount}}</td>
-           <td>{{order.transaction_id}}</td>-->
-           <td>{% for orderitem in orderitem %}{{orderitem.course_Id}}<br>{% endfor %}</td>
-           <td>{% for orderitem in orderitem %}{{orderitem.Total_Amount}}<br>{% endfor %}</td>
-           <td>{% for order in order %}{{order.transaction_id}}<br>{% endfor %}</td>
+           <td>{{orderall.order_item_id.member_id}}</td>
+           <td>{{orderall.transaction_id}}</td>
+           <td>{{orderall.order_item_id.course_Id}}</td>
+           <td>{{orderall.order_item_id.Total_Amount}}</td>
            <td>{{instructor.instructor_id.firstname}}{{display}} <a href="#">Change Instructor</a></td>
-
        </tr>
        {% endfor %}
-    </table>
+       </table>
         </div>
       <div id="respond">
 

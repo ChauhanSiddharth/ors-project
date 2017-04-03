@@ -75,12 +75,14 @@ def Payment_Details(request):
         order_item = Orders_Item.objects.filter( member_id = id )
         order = Orders.objects.filter( order_item_id = order_item)
         instructor = instructor_course.objects.filter()
+        orderall = Orders.objects.all()
         context = {
             "order": order,
             "orderitem": order_item,
             "instructor": instructor,
             'data': data,
-            'display': "None"
+            'display': "None",
+            'orderall': orderall,
         }
         return render(request, 'payment_details.html', context)
 
