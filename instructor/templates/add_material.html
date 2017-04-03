@@ -91,7 +91,7 @@ Licence URI: http://www.os-templates.com/template-terms
       <li>&#187;</li>
       <li><a href="/dashboard/">Home</a></li>
       <li>&#187;</li>
-        <li><a href="/courses/">Manage Course</a></li>
+        <li><a href="/courses/">My Course</a></li>
         <li>&#187;</li>
       <li class="current"><a href="/add_material/">Add Material</a></li>
     </ul>
@@ -101,22 +101,34 @@ Licence URI: http://www.os-templates.com/template-terms
 <div class="wrapper col4">
   <div id="container">
     <div id="content" style="height:600px;">
-      <h2>Add Material</h2>
+      <center><h2>Add Material</h2>
+        <br><br>
        <form enctype="multipart/form-data" action="{{ action }}" method="POST">{% csrf_token %}
 
            <!--{% for fields in form %}
                 <tr><td>{{ fields.label_tag }} &nbsp; {{ fields }}</td></tr>
                 {% endfor %}-->
            <input type="hidden" id="course_id" name="course_id" value="{{course_id}}" >
-           Material Name: {{form.mname}} <br><br>
-           Files: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            {{form.files}}  <br><br>
-
+           Material Name: {{form.mname}} &nbsp;&nbsp;
+            Files: {{form.files}}
+            <br><br><br><br>
         <center><input type="submit" value="Add Material"></center>
-    </form>
-
-
+    </form></center>
     </div>
+    <div id="column">
+      <div class="subnav">
+      <h2>Class Details</h2>
+        <ul>
+          <li><a href="/instructor_course/">My Course</a></li>
+          <li><a href="/view_class/">Class Details and Schedule</a></li>
+            <ul>
+              <li><a href="/add_class/">Add Class</a></li>
+            </ul>
+          </li>
+          <li><a href="/add_material/">Add Material</a>
+          <li><a href="/add_material/">Add Schedule</a>
+        </ul>
+      </div></div>
     <div class="clear"></div>
   </div>
 </div>
