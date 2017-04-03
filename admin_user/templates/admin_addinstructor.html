@@ -8,8 +8,7 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Home</title> {% load staticfiles %}
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Add Instructor</title> {% load staticfiles %}
 <link rel="stylesheet" href="{% static 'static_dirs/layout/styles/layout.css' %}" type="text/css" />
 <script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.slidepanel.setup.js' %}"></script>
@@ -40,7 +39,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <div class="wrapper col1">
   <div id="header">
     <div id="logo">
-      <h1><a href="../index.html">Manage Course</a></h1>
+      <h1><a href="../index.html">Assign Instructor</a></h1>
       <p>Admin</p>
     </div>
     <div class="fl_right">
@@ -66,7 +65,7 @@ Licence URI: http://www.os-templates.com/template-terms
       <li class="active"><a href="/manage_course/">Manage Courses</a>
 
       </li>
-      <li class="last"><a href="/payment_details/">View Payment Details</a></li>
+      <li><a href="/payment_details/">View Payment Details</a></li>
     </ul>
   </div>
 </div>
@@ -76,7 +75,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <ul>
       <li class="first">You Are Here</li>
       <li>&#187;</li>
-      <li><a href="#">Manage Course</a></li>
+      <li><a href="#">Add Instructor</a></li>
     </ul>
   </div>
 </div>
@@ -84,40 +83,15 @@ Licence URI: http://www.os-templates.com/template-terms
 <div class="wrapper col4">
   <div id="container" style="height:500px;">
     <div id="content">
-      <!--  {% for s in details %}
-      <center><img src="{{ s.profile_pic.url }}" width="200px" height="180px"></center>
-      {% endfor %}-->
-        <br>
-        <center><h2>All Courses</h2></center>
-        <table border="1" style="padding : 10px;">
-            <thead>
-           <tr>
-               <th>Title</th>
-               <th>Status</th>
-               <th>Duration</th>
-               <th>Fees</th>
-           </tr></thead>
-           {% for data in data %}
-           <tr>
-               <td><form action="/show_course/" method="POST">{% csrf_token %}
-                    <input type="hidden" value="{{ data.id }}" name="id" id="id">
-                    <input type="submit" value="{{ data.title }}"/></form></td>
-               <td>{{ data.status }}</td>
-               <td>{{ data.duration }}</td>
-               <td>{{ data.fees }}</td>
-           </tr>
-           {% endfor %}
-       </table>
+        <form action="/admin_addinstructor/" method="post">{% csrf_token %}
+                <table>
+                {% for fields in form %}
+                <tr><td>{{ fields.label_tag }}</td><td>{{ fields }}</td></tr>
+                {% endfor %}
+              </table>
+            <center><input type="submit" values="Add"> </center>
+
         </div>
-      <div id="column">
-      <div class="subnav">
-      <h2>Add Details</h2>
-        <ul>
-          <li><a href="/add_course/">Add Course</a></li>
-          <li><a href="/admin_addinstructor/">Assign Instructor to Member</a>
-          </li>
-        </ul>
-      </div>
       <div id="respond">
 
       </div>

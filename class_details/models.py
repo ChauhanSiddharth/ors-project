@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
+import datetime
 
 # Create your models here.
 
@@ -16,7 +17,7 @@ class Class_Master(models.Model):
 	status = models.CharField(max_length=10,null=False,choices=(('Active','Active'),('Deactive','Deactive')))
 	Class_completion_status = models.CharField(max_length=10,null=False,choices=(('Started','Started'),('Panding','Panding'),('Cancelled','Cancelled'),('Completed','Completed')))
 	Extra_notes = models.CharField(max_length=255,null=False)
-	Dcreated = models.DateTimeField()
+	Dcreated = models.DateField(default=datetime.date.today(),null=False)
 
 	def __unicode__(self):
 		return str(self.class_name)

@@ -10,7 +10,8 @@ show_details,
 manage_user,
 manage_course,
 admin_changePassword,
-Payment_Details
+Payment_Details,
+Member_Class
 )
 
 
@@ -27,4 +28,5 @@ url(r'^view_course/',view_course, name="view_course"),
 url(r'^dashboard/',Dashboard, name="Dashboard"),
 url(r'^changepassword/', admin_changePassword, name="AdminPassword"),
 url(r'^payment_details/', Payment_Details, name="Payment_Details"),
+url(r'^admin_addinstructor/', Member_Class, name="Member_Class"),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -22,6 +22,7 @@ from member.views import changePassword, DeleteAccount, editProfile ,MemberProfi
 from admin_user.views import AdminProfile
 from contact.views import Contact_View
 from orders.views import new_order,Payment_Gateway
+from class_details.views import Add_Class, View_Class
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -38,5 +39,7 @@ urlpatterns = [
     url(r'^order/', new_order),
     url(r'^payment/', Payment_Gateway),
     url(r'^my_course/', My_Course),
+    url(r'^add_class/', Add_Class),
+    url(r'^view_class/', View_Class),
 
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

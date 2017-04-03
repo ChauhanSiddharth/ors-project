@@ -5,6 +5,8 @@ from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from course.models import course_details,member_course,instructor_course
 from orders.models import Orders,Orders_Item
+from class_details.models import Class_Master,Class_Member
+from class_details.form import Class_MemberForm,ClassForm
 
 # Create your views here.
 
@@ -35,7 +37,9 @@ def manage_user(request):
 
 def AdminProfile(request):
     if request.user.is_authenticated():
-        return render(request, 'admin.html')
+        MemberCourse = member_course.objects.all()
+        InstructorCourse = instructor_course.objects.all()
+        return render(request, 'admin.html',{'member':MemberCourse,'instructor':InstructorCourse})
     else:
         return redirect('login')
 
@@ -79,4 +83,15 @@ def Payment_Details(request):
             'display': "None"
         }
         return render(request, 'payment_details.html', context)
+
+def Member_Class(request):
+    if request.user.is_authenticated():
+        form = Class_MemberForm( request.POST )
+        if request.POST:
+            if form.is_valid():
+                form.save()
+                return redirect('/manage_course/')
+        else:
+            form = Class_MemberForm()
+            return render(request,'admin_addinstructor.html',{'form':form})
 
