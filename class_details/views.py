@@ -13,7 +13,7 @@ def View_Class(request):
         try:
             class_details = Class_Master.objects.filter( Instructor_id = instructor )
             classno = class_details.values()[0]['class_id']
-            class_member = Class_Member.objects.filter( class_member_id = classno )
+            class_member = Class_Member.objects.filter( class_id = classno )
             course = instructor_course.objects.filter(instructor_id=user.id)
             course_id = course.values()[0]['id']
             materials = material.objects.filter(course_id_id=course_id)

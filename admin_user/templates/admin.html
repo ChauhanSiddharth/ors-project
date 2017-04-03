@@ -88,34 +88,8 @@ Licence URI: http://www.os-templates.com/template-terms
       <center><img src="{{ s.profile_pic.url }}" width="200px" height="180px"></center>
       {% endfor %}-->
 
-    <center><h2>Member Course</h2></center>
-        <table>
-            <thead>
-            <th>Course</th>
-            <th>Member Name</th>
-            </thead>
-            {% for member in member %}
-            <tr><td>{{member.course_id}}</td>
-                <td>{{member.member_id}}</td>
-            </tr>
-            {% endfor %}
-        </table>
-        <center><h2>Instructor Course</h2></center>
-        <table>
-            <thead>
-            <th>Course</th>
-            <th>Member Name</th>
-            </thead>
-            {% for instructor in instructor %}
-            <tr><td>{{instructor.course_id}}</td>
-                <td>{{instructor.instructor_id}}</td>
-            </tr>
-            {% endfor %}
-        </table>
-
-    </div>
-     <div id="column">
-      <div class="subnav">
+    <div id="column" style="width:600px;">
+      <div class="subnav" style="width:600px;">
         <h2>Admin Tools</h2>
         <ul>
           <li><a href="/manage_user/">Manage User</a></li>
@@ -125,10 +99,8 @@ Licence URI: http://www.os-templates.com/template-terms
         </ul>
       </div>
 
-      <div id="respond">
-
-      </div>
     </div>
+        </div></div>
 
     <div class="clear"></div>
   </div>
