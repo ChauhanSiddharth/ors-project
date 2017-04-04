@@ -47,7 +47,8 @@ def delete_course(request):
     if request.user.is_authenticated():
         if request.POST:
             id = request.POST.get('id')
-            data = course_details.objects.filter(id = id).delete()
+            data = course_details.objects.filter(id = id)
+            data.delete()
             return redirect('manage_course')
     else:
         return redirect('login')
@@ -57,12 +58,21 @@ def courses(request):
     if request.user.is_authenticated():
         user = request.user
         data = course_details.objects.all()
-        class_member = Class_Member.objects.filter( member_id = user.id )
-        mycourse = Class_Master.objects.filter( class_id = class_member )
-        if user.userprofile.usertype == 'member':
-            return render(request,'courses.html',{'data':data,'mycourse':mycourse})
-        else:
-            return redirect('instructor_course')
+        try:
+            class_member = Class_Member.objects.filter( member_id = user.id )
+            class_member_id = class_member.values()[0]['class_id_id']
+            print class_member_id
+            mycourse = Class_Master.objects.filter( class_id = class_member_id )
+            print mycourse
+            if user.userprofile.usertype == 'member':
+                return render(request,'courses.html',{'data':data,'mycourse':mycourse})
+            else:
+                return redirect('instructor_course')
+        except Exception:
+            if user.userprofile.usertype == 'member':
+                return render(request,'courses.html',{'data':data})
+            else:
+                return redirect('instructor_course')
     else:
         return redirect('login')
 

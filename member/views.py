@@ -94,7 +94,8 @@ def My_Course(request):
     if request.user.is_authenticated():
         user = request.user
         class_member = Class_Member.objects.filter(member_id=user.id)
-        mycourse = Class_Master.objects.filter(class_id=class_member)
+        class_member_id = class_member.values()[0]['class_id_id']
+        mycourse = Class_Master.objects.filter(class_id=class_member_id)
         cid = mycourse.values()[0]['course_id_id']
         print cid
         myinstructor = instructor_course.objects.filter( course_id_id = cid )

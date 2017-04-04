@@ -92,8 +92,8 @@ def Member_Class(request):
         if request.POST:
             if form.is_valid():
                 form.save()
-                return redirect('/manage_course/')
+                return redirect('/admin_addinstructor/')
         else:
             form = Class_MemberForm()
-            return render(request,'admin_addinstructor.html',{'form':form})
-
+            class_data = Class_Master.objects.all()
+            return render(request,'admin_addinstructor.html',{'form':form,'class_data':class_data})
