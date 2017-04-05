@@ -111,10 +111,8 @@ def Member_Class(request):
         else:
             form = Class_MemberForm()
             Class = " "
+            class_member = " "
             class_data = Class_Master.objects.all()
-            for class_id in class_data:
-                Class = class_id
-            class_member = Class_Member.objects.filter( class_id = Class )
-            print class_member
+            class_member = Class_Member.objects.all()
 
             return render(request,'admin_addinstructor.html',{'form':form,'class_data':class_data,'member':class_member})

@@ -93,28 +93,19 @@ Licence URI: http://www.os-templates.com/template-terms
             <center><input type="submit" values="Add"> </center>
           </form>
       <br><br>
-      <h2>Class Details</h2>
 
       <table>
 
         <thead>
-        <th>Class Name</th>
         <th>Course Name</th>
+        <th>Member Name</th>
         <th>Instructor Name</th>
-        <th>Schedule Start Date</th>
-        <th>Status</th>
-        <th>Class Completion Status</th>
-        <th>Members</th>
         </thead>
-        {% for class_data in class_data %}
+        {% for member in member %}
         <tr>
-          <td>{{class_data.class_name}}</td>
-          <td>{{class_data.course_id}}</td>
-          <td>{{class_data.Instructor_id.instructor_id.userprofile.firstname}} {{class_data.Instructor_id.instructor_id.userprofile.lastname}}</td>
-          <td>{{class_data.schedule_startdate}}</td>
-          <td>{{class_data.status}}</td>
-          <td>{{class_data.Class_completion_status}}</td>
-          <td>{% for member in member %} {{member.member_id.userprofile.firstname}} {% endfor %}</td>
+          <td>{{member.class_id.course_id}}</td>
+          <td>{{member.member_id.userprofile.firstname}}</td>
+          <td>{{member.class_id.Instructor_id.instructor_id.userprofile.firstname}} {{class_data.Instructor_id.instructor_id.userprofile.lastname}}</td>
         </tr>
         {% endfor %}
       </table>
