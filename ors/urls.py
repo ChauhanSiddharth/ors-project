@@ -41,5 +41,6 @@ urlpatterns = [
     url(r'^my_course/', My_Course),
     url(r'^add_class/', Add_Class),
     url(r'^view_class/', View_Class),
+    url(r'^admin_tools/', include('admin_tools.urls')),
 
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
