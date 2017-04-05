@@ -88,6 +88,7 @@ def Payment_Details(request):
                 "instructor": instructor,
                 "data": data,
                 "orderall": orderall,
+                "paid": "paid for",
             }
             return render(request, 'payment_details.html', context)
         except:

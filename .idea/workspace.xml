@@ -4,9 +4,16 @@
     <list default="true" id="cdc966af-72d0-4a79-8f17-c7faf1bacf7f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_user/templates/admin.html" afterPath="$PROJECT_DIR$/admin_user/templates/admin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_user/templates/admin_addinstructor.html" afterPath="$PROJECT_DIR$/admin_user/templates/admin_addinstructor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_user/templates/edit_profile.html" afterPath="$PROJECT_DIR$/admin_user/templates/edit_profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_user/templates/manage_course.html" afterPath="$PROJECT_DIR$/admin_user/templates/manage_course.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_user/templates/manage_user.html" afterPath="$PROJECT_DIR$/admin_user/templates/manage_user.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_user/templates/payment_details.html" afterPath="$PROJECT_DIR$/admin_user/templates/payment_details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_user/templates/show_details.html" afterPath="$PROJECT_DIR$/admin_user/templates/show_details.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_user/views.py" afterPath="$PROJECT_DIR$/admin_user/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course/templates/add_course.html" afterPath="$PROJECT_DIR$/course/templates/add_course.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course/templates/show_course.html" afterPath="$PROJECT_DIR$/course/templates/show_course.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,43 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="payment_details.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin_user/templates/payment_details.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/member/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="723">
-              <caret line="100" column="59" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_user/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="115" column="53" selection-start-line="115" selection-start-column="53" selection-end-line="115" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_addinstructor.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_user/templates/admin_addinstructor.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="94" column="14" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/class_details/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="12" />
+            <state relative-caret-position="383">
+              <caret line="90" column="76" selection-start-line="90" selection-start-column="76" selection-end-line="90" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -88,11 +63,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/login/static/static_dirs/css/stylegallery.css" />
-        <option value="$PROJECT_DIR$/login/templates/index.html" />
-        <option value="$PROJECT_DIR$/login/views.py" />
-        <option value="$PROJECT_DIR$/login/templates/register.html" />
-        <option value="$PROJECT_DIR$/login/templates/forms.html" />
         <option value="$PROJECT_DIR$/login/urls.py" />
         <option value="$PROJECT_DIR$/login/static/static_dirs/js/searchstyle.js" />
         <option value="$PROJECT_DIR$/course/models.py" />
@@ -131,13 +101,18 @@
         <option value="$PROJECT_DIR$/class_details/models.py" />
         <option value="$PROJECT_DIR$/class_details/templates/class_details.html" />
         <option value="$PROJECT_DIR$/class_details/views.py" />
-        <option value="$PROJECT_DIR$/admin_user/templates/admin.html" />
         <option value="$PROJECT_DIR$/member/templates/courses.html" />
-        <option value="$PROJECT_DIR$/admin_user/templates/manage_course.html" />
         <option value="$PROJECT_DIR$/member/views.py" />
         <option value="$PROJECT_DIR$/course/views.py" />
-        <option value="$PROJECT_DIR$/admin_user/views.py" />
+        <option value="$PROJECT_DIR$/course/templates/show_course.html" />
+        <option value="$PROJECT_DIR$/admin_user/templates/show_details.html" />
+        <option value="$PROJECT_DIR$/course/templates/add_course.html" />
+        <option value="$PROJECT_DIR$/admin_user/templates/admin.html" />
         <option value="$PROJECT_DIR$/admin_user/templates/admin_addinstructor.html" />
+        <option value="$PROJECT_DIR$/admin_user/templates/edit_profile.html" />
+        <option value="$PROJECT_DIR$/admin_user/templates/manage_course.html" />
+        <option value="$PROJECT_DIR$/admin_user/templates/manage_user.html" />
+        <option value="$PROJECT_DIR$/admin_user/views.py" />
         <option value="$PROJECT_DIR$/admin_user/templates/payment_details.html" />
       </list>
     </option>
@@ -216,38 +191,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -595,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491381207382</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Admin Page 90% Complete">
+      <created>1491395718358</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1491395718358</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -666,28 +616,14 @@
     <MESSAGE value="Member By Class" />
     <MESSAGE value="Payment Details Shows Instructor If Assigned" />
     <MESSAGE value="Add Class Details Edited" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Class Details Edited" />
+    <MESSAGE value="Admin Page 90% Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin Page 90% Complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/schedule/templates/add_schedule.html" />
-    <entry file="file://$PROJECT_DIR$/course/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orders/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/instructor/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -741,13 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="49" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_user/templates/show_details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="213" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -821,13 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/course/templates/add_course.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="99" column="14" selection-start-line="99" selection-start-column="14" selection-end-line="103" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/class_details/form.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -871,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_user/templates/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/member/templates/view_course.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -910,13 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_user/templates/manage_course.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="116" column="58" selection-start-line="116" selection-start-column="58" selection-end-line="116" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -969,20 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/member/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1804">
-          <caret line="90" column="76" selection-start-line="90" selection-start-column="76" selection-end-line="90" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/course/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="74" column="52" selection-start-line="74" selection-start-column="52" selection-end-line="74" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/orders/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -997,12 +891,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/course/templates/show_course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="139" column="6" selection-start-line="139" selection-start-column="6" selection-end-line="139" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course/templates/add_course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="124" column="6" selection-start-line="124" selection-start-column="6" selection-end-line="124" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_user/templates/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="111" column="6" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_user/templates/admin_addinstructor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="125" column="6" selection-start-line="125" selection-start-column="6" selection-end-line="125" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_user/templates/edit_profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="137" column="6" selection-start-line="137" selection-start-column="6" selection-end-line="137" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_user/templates/manage_course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="132" column="6" selection-start-line="132" selection-start-column="6" selection-end-line="132" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_user/templates/payment_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="22" column="143" selection-start-line="22" selection-start-column="143" selection-end-line="22" selection-end-column="143" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin_user/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="115" column="53" selection-start-line="115" selection-start-column="53" selection-end-line="115" selection-end-column="53" />
+        <state relative-caret-position="493">
+          <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_user/templates/manage_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_user/templates/show_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3828">
+          <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1015,18 +999,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_user/templates/admin_addinstructor.html">
+    <entry file="file://$PROJECT_DIR$/course/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="94" column="14" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
+        <state relative-caret-position="484">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_user/templates/payment_details.html">
+    <entry file="file://$PROJECT_DIR$/member/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="100" column="59" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
+        <state relative-caret-position="383">
+          <caret line="90" column="76" selection-start-line="90" selection-start-column="76" selection-end-line="90" selection-end-column="76" />
           <folding />
         </state>
       </provider>

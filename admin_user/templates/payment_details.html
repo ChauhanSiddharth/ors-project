@@ -20,7 +20,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <div id="slidepanel">
       <div align="center" style="padding :10px;">
         <h2>Notifications</h2>
-          <div style="overflow:scroll; height: 80px;">No Notification</div>
+          <div style="overflow:scroll; height: 80px;">{% for orderall in orderall %}<p>{{orderall.order_item_id.member_id.userprofile.firstname}} {{paid}} {{orderall.order_item_id.course_Id}}</p>{% endfor %}</div>
         <!--<p class="readmore"><a href="#">Continue Reading &raquo;</a></p> -->
       </div>
         <br class="clear" />
@@ -81,9 +81,9 @@ Licence URI: http://www.os-templates.com/template-terms
 </div>
 <!-- ####################################################################################################### -->
 <div class="wrapper col4">
-  <div id="container" style="height:500px;">
-    <div id="content">
-
+  <div id="container">
+    <div id="content" style="margin-bottom:400px;">
+        <center><h2>Payment Details</h2></center>
         <table>
             <thead>
         <th>Name</th>
@@ -116,32 +116,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <div class="wrapper col5">
   <div id="footer">
   <div class="footbox">
-      <h2>Settings</h2>
-      <ul>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Feedback</a></li>
-      </ul>
-    </div>
-    <div class="footbox">
-      <h2>Manage Courses</h2>
-      <ul>
-        <li><a href="#">All Courses</a></li>
-        <li><a href="#">Courses Details</a></li>
-      </ul>
-    </div>
-    <div class="footbox">
-      <h2>View Payment Details</h2>
-      <ul>
-        <li><a href="#">Manage Details</a></li>
-        <li><a href="#">Status</a></li>
-      </ul>
-    </div>
-    <div class="footbox">
-      <h2>Manage User</h2>
-      <ul>
-        <li><a href="/manage_user/">All Users</a></li>
-        <li><a href="#">User Details</a></li>
-      </ul>
+
     </div>
     <br class="clear" />
   </div>
