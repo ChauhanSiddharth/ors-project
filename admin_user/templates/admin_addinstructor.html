@@ -94,7 +94,9 @@ Licence URI: http://www.os-templates.com/template-terms
           </form>
       <br><br>
       <h2>Class Details</h2>
+
       <table>
+
         <thead>
         <th>Class Name</th>
         <th>Course Name</th>
@@ -102,6 +104,7 @@ Licence URI: http://www.os-templates.com/template-terms
         <th>Schedule Start Date</th>
         <th>Status</th>
         <th>Class Completion Status</th>
+        <th>Members</th>
         </thead>
         {% for class_data in class_data %}
         <tr>
@@ -111,9 +114,11 @@ Licence URI: http://www.os-templates.com/template-terms
           <td>{{class_data.schedule_startdate}}</td>
           <td>{{class_data.status}}</td>
           <td>{{class_data.Class_completion_status}}</td>
+          <td>{% for member in member %} {{member.member_id.userprofile.firstname}} {% endfor %}</td>
         </tr>
         {% endfor %}
       </table>
+
         </div>
       <div id="respond">
 

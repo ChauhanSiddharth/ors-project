@@ -71,35 +71,35 @@ def Payment_Details(request):
     if request.user.is_authenticated():
         data = UserProfile.objects.filter(usertype = "member")# (member id = 16, id = 3)
         id = data.values()[1]['user_id']
-        print id
         member_id = " "
+        instructor = " "
         order_item = Orders_Item.objects.filter( member_id = id )
         order = Orders.objects.filter( order_item_id = order_item)
-        instructor = " "
         orderall = Orders.objects.all()
+        for order_item_id in orderall:
+            member_id = order_item_id.order_item_id.member_id
+        classmember = Class_Member.objects.filter( member_id = member_id)
         try:
-            for order_item_id in orderall:
-                member_id = order_item_id.order_item_id.member_id
-            classmember = Class_Member.objects.filter( member_id = member_id)
             for class_id in classmember:
                 instructor =  class_id.class_id.Instructor_id
             context = {
                 "order": order,
                 "orderitem": order_item,
                 "instructor": instructor,
-                'data': data,
-                'orderall': orderall,
-                }
+                "data": data,
+                "orderall": orderall,
+            }
             return render(request, 'payment_details.html', context)
-        except Exception:
+        except:
             context = {
                 "order": order,
                 "orderitem": order_item,
-                "display": "None",
-                'data': data,
-                'orderall': orderall,
+                "instructor": instructor,
+                "data": data,
+                "orderall": orderall,
             }
             return render(request, 'payment_details.html', context)
+
 
 def Member_Class(request):
     if request.user.is_authenticated():
@@ -110,5 +110,11 @@ def Member_Class(request):
                 return redirect('/admin_addinstructor/')
         else:
             form = Class_MemberForm()
+            Class = " "
             class_data = Class_Master.objects.all()
-            return render(request,'admin_addinstructor.html',{'form':form,'class_data':class_data})
+            for class_id in class_data:
+                Class = class_id
+            class_member = Class_Member.objects.filter( class_id = Class )
+            print class_member
+
+            return render(request,'admin_addinstructor.html',{'form':form,'class_data':class_data,'member':class_member})
