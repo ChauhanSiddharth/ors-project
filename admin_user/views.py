@@ -72,19 +72,34 @@ def Payment_Details(request):
         data = UserProfile.objects.filter(usertype = "member")# (member id = 16, id = 3)
         id = data.values()[1]['user_id']
         print id
+        member_id = " "
         order_item = Orders_Item.objects.filter( member_id = id )
         order = Orders.objects.filter( order_item_id = order_item)
-        instructor = instructor_course.objects.filter()
+        instructor = " "
         orderall = Orders.objects.all()
-        context = {
-            "order": order,
-            "orderitem": order_item,
-            "instructor": instructor,
-            'data': data,
-            'display': "None",
-            'orderall': orderall,
-        }
-        return render(request, 'payment_details.html', context)
+        try:
+            for order_item_id in orderall:
+                member_id = order_item_id.order_item_id.member_id
+            classmember = Class_Member.objects.filter( member_id = member_id)
+            for class_id in classmember:
+                instructor =  class_id.class_id.Instructor_id
+            context = {
+                "order": order,
+                "orderitem": order_item,
+                "instructor": instructor,
+                'data': data,
+                'orderall': orderall,
+                }
+            return render(request, 'payment_details.html', context)
+        except Exception:
+            context = {
+                "order": order,
+                "orderitem": order_item,
+                "display": "None",
+                'data': data,
+                'orderall': orderall,
+            }
+            return render(request, 'payment_details.html', context)
 
 def Member_Class(request):
     if request.user.is_authenticated():

@@ -91,6 +91,7 @@ Licence URI: http://www.os-templates.com/template-terms
         <th>Paid</th>
         <th>Transaction ID</th>
         <th>Instructor</th>
+        <th>Change Instructor</th>
             </thead>
        {% for orderall in orderall %}
 
@@ -99,7 +100,8 @@ Licence URI: http://www.os-templates.com/template-terms
            <td>{{orderall.transaction_id}}</td>
            <td>{{orderall.order_item_id.course_Id}}</td>
            <td>{{orderall.order_item_id.Total_Amount}}</td>
-           <td>{{instructor.instructor_id.firstname}}{{display}} <a href="#">Change Instructor</a></td>
+           <td>{{instructor.instructor_id.userprofile.firstname}} {{instructor.instructor_id.userprofile.lastname}}{{display}}</td>
+           <td><a href="/admin_addinstructor/"><button>Change Instructor</button></a></td>
        </tr>
        {% endfor %}
        </table>
