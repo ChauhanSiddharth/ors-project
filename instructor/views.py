@@ -36,3 +36,11 @@ def add_material(request):
                 form.save()
                 return redirect('instructor_course')
         return render(request,'add_material.html',{'form':form,'course_id':courseid})
+
+def delete_material(request):
+    user = request.user
+    if request.POST:
+        id = request.POST.get('id')
+        materials = material.objects.filter( id = id )
+        materials.delete()
+        return redirect('/view_class/')

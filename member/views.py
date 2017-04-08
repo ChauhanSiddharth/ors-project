@@ -111,7 +111,8 @@ def Dashboard(request):
                 }
                 return render(request, 'home.html', context)
             except Exception:
-                return HttpResponse("Error")
+                return render(request, 'home.html', {'data': data})
+
         elif user.userprofile.usertype == 'member':
             try:
                 class_member = Class_Member.objects.filter(member_id=user.id)
@@ -148,7 +149,7 @@ def My_Course(request):
         myinstructor = instructor_course.objects.filter( course_id_id = cid )
         print myinstructor
         materials = material.objects.filter( course_id = myinstructor )
-        schedule = Schedule_Master.objects.filter(Class_id= class_member_id)
+        schedule = Schedule_Master.objects.order_by('Schedule_datetime').filter(Class_id= class_member_id)
         print materials
         context = {
             'mycourse': mycourse,
