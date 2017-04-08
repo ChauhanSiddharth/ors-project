@@ -143,6 +143,26 @@ Licence URI: http://www.os-templates.com/template-terms
       {% endfor %}
     </table>
         <center><h2>Schedule</h2></center>
+        <table>
+         <thead>
+            <th>Schedule Title</th>
+            <th>Schedule Description</th>
+            <th>Schedule Date Time</th>
+            <th>Class Held Status</th>
+            <th>Extra Note</th>
+            </thead>
+        {% for  schedule in schedule %}
+        <tr>
+            <td>{{ schedule.Schedule_title }}</td>
+            <td>{{ schedule.Schedule_description }}</td>
+            <td>{{ schedule.Schedule_datetime }}</td>
+            <td>{{ schedule.Class_held_status }}</td>
+            <td>{{ schedule.Extra_notes }}</td>
+        </tr>
+        {% endfor %}
+        </table>
+
+
       </div>
       <div id="column">
       <div class="subnav">

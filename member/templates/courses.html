@@ -189,7 +189,7 @@ a.gallerypic:hover span.zoom-icon{
     <button id="search_submit" type="submit" >Submit</button>
     <ul id="myUL">
   {% for data in data %}
-  <li><a href="#">{{ data.title }}</a></li>
+  <li><a href="#" onclick="form.submit();">{{ data.title }}</a></li>
   {% endfor %}
   </ul>
 
@@ -216,25 +216,12 @@ a.gallerypic:hover span.zoom-icon{
       <h2>My Course</h2>
         {{display}}
       {% for mycourse in mycourse %}
-      <h3><a href="#">{{mycourse.course_id.title}}</a></h3>
-      <table>
-        <thead>
-        <th>Description</th>
-        </thead>
-        <tr>
-          <td align="center">{{mycourse.course_id.description}}</td>
-        </tr>
-      </table>
-      <table>
-        <thead>
-        <th>Material</th>
-        <th>Schedule</th>
-        </thead>
-        <tr>
-          <td><a href="/my_course/"> <button>Material</button></a></td>
-          <td><a href="/my_course/"> <button>Schedule</button></a></td>
-        </tr>
-      </table>
+      <h3><a href="/my_course/">{{mycourse.course_id.title}}</a></h3>
+        <ul>
+        <li><a href="/my_course/">Course Schedule</a></li>
+        <li><a href="/my_course/">Course Material</a></li>
+      </ul>
+
       {% endfor %}
       </div></div>
     <div class="clear"></div>

@@ -36,9 +36,3 @@ def add_material(request):
                 form.save()
                 return redirect('instructor_course')
         return render(request,'add_material.html',{'form':form,'course_id':courseid})
-
-
-
-def add_schedule():
-
-    pass

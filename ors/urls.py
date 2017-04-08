@@ -24,6 +24,7 @@ from contact.views import Contact_View
 from orders.views import new_order,Payment_Gateway
 from class_details.views import Add_Class, View_Class
 
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^',include('login.urls')),

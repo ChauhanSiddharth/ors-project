@@ -7,6 +7,9 @@ from login.models import UserProfile
 from course.models import course_details, instructor_course, member_course, material
 from login.forms import User_Form, Details_Form
 from class_details.models import Class_Master,Class_Member
+from schedule.models import Schedule_Master,Schedule_Syllabus
+import datetime
+from django.utils import timezone
 
 # Create your views here.
 
@@ -88,7 +91,51 @@ def Dashboard(request):
         data = UserProfile.objects.filter( user = user.id )
         skills = data.values()[0]['skills']
         coursedata = course_details.objects.filter(title=skills)
-        return render(request,'home.html',{'data':data,'course':coursedata})
+        if user.userprofile.usertype == 'instructor':
+            instructor = instructor_course.objects.filter(instructor_id=user.id)
+            try:
+                class_details = Class_Master.objects.filter(Instructor_id=instructor)
+                classno = class_details.values()[0]['class_id']
+                class_member = Class_Member.objects.filter(class_id=classno)
+                course = instructor_course.objects.filter(instructor_id=user.id)
+                course_id = course.values()[0]['id']
+                materials = material.objects.filter(course_id_id=course_id)
+                schedule = Schedule_Master.objects.filter(Class_id=classno).\
+                    filter(Class_held_status = "Pending").filter( Status = "Active" )
+                context ={
+                    'data': data,
+                    'course': coursedata,
+                    'member':class_member,
+                    'material' : materials,
+                    'schedule': schedule,
+                }
+                return render(request, 'home.html', context)
+            except Exception:
+                return HttpResponse("Error")
+        elif user.userprofile.usertype == 'member':
+            try:
+                class_member = Class_Member.objects.filter(member_id=user.id)
+                class_member_id = class_member.values()[0]['class_id_id']
+                mycourse = Class_Master.objects.filter(class_id=class_member_id)
+                cid = mycourse.values()[0]['course_id_id']
+                myinstructor = instructor_course.objects.filter(course_id_id=cid)
+                class_details = Class_Master.objects.filter(Instructor_id= myinstructor)
+                classno = class_details.values()[0]['class_id']
+                today_date = timezone.now()
+                schedule = Schedule_Master.objects.filter(Class_id=classno).\
+                    filter(Class_held_status = "Pending").filter( Status = "Active" )
+                context = {
+                    'data': data,
+                    'course': mycourse,
+                    'myinstructor': myinstructor,
+                    'myschedule': schedule,
+                }
+                return render(request, 'home.html', context)
+            except Exception:
+                return render(request, 'home.html',{'data':data})
+        else:
+            return HttpResponse("Error")
+
 
 def My_Course(request):
     if request.user.is_authenticated():
@@ -101,8 +148,14 @@ def My_Course(request):
         myinstructor = instructor_course.objects.filter( course_id_id = cid )
         print myinstructor
         materials = material.objects.filter( course_id = myinstructor )
+        schedule = Schedule_Master.objects.filter(Class_id= class_member_id)
         print materials
+        context = {
+            'mycourse': mycourse,
+            'materials': materials,
+            'schedule':schedule,
+        }
         if user.userprofile.usertype == 'member':
-            return render(request,'my_course.html',{'mycourse':mycourse,'materials':materials})
+            return render(request,'my_course.html',context)
         else:
             return redirect('instructor_course')

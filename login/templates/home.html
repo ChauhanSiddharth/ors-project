@@ -100,29 +100,40 @@ Licence URI: http://www.os-templates.com/template-terms
 <div class="wrapper col4">
   <div id="container">
     <div id="content" style="height:600px;">
-      {% for data in data %}
-      {% for course in course %}
+
+
       <table align="center">
-	<center><h4>Welcome, {{ data.firstname }} {{ data.lastname }}</h4></center>
-	<thead><th>Course Schedule</th></thead>
-	</table>
+	    <center><h4>Welcome, {% for data in data %}{{ data.firstname }} {{ data.lastname }}{% endfor %}</h4></center>
+        {% for course in course %}
+	    <thead>
+          <th>Course Schedule</th>
+        </thead>
+	  </table>
+      {% for schedule in  schedule %}
 	<table align="center">
 	<tr><td align="center">Course Name:</td><td> {{ course.title }}</td></tr>
-	<tr><td align="center">Instructor :</td><td> Divyesh Sir</td></tr>
-	<tr><td align="center">Class Title :</td><td> Django Forms</td></tr>
-	<tr><td align="center">Class Description :</td><td> Using Forms in Django Project</td></tr>
-	<tr><td align="center">Extra Note :</td><td> Install rest framework</td></tr>
-	<tr><td align="center">Class held :</td><td> Pending</td></tr>
-	<tr><td align="center">Status:</td><td> Active</td></tr>
-	<tr><td align="center">Class Date :</td><td> 17 March 2017</td>
-	<tr><td align="center">Class Time :</td><td> 5:30 pm</td></tr>
+	<tr><td align="center">Members :</td><td>{% for member in member %} {{member.member_id.userprofile.firstname}}<br>{% endfor %}</td></tr>
+	<tr><td align="center">Class Title :</td><td>{{ schedule.Schedule_title }}</td></tr>
+	<tr><td align="center">Class Description :</td><td>{{ schedule.Schedule_description }}</td></tr>
+	<tr><td align="center">Extra Note :</td><td>{{ schedule.Extra_notes }}</td></tr>
+	<tr><td align="center">Class held :</td><td>{{ schedule.Class_held_status }}</td></tr>
+	<tr><td align="center">Class Date Time:</td><td>{{ schedule.Schedule_datetime }}</td>
+      {% endfor %}
 	</table>
+      {% for myschedule in  myschedule %}
+      {% for myinstructor in myinstructor %}
 	<table align="center">
-	<thead><th>Requested Orders</th></thead>
-	<tr><td align="center">No Pending Requests</td></tr>
-</table>
+	<tr><td align="center">Course Name:</td><td> {{ course.course_id.title }}</td></tr>
+	<tr><td align="center">Instructor :</td><td>{{ myinstructor.instructor_id.userprofile.firstname }} {{ myinstructor.instructor_id.userprofile.lastname }}</td></tr>
+	<tr><td align="center">Class Title :</td><td>{{ myschedule.Schedule_title }}</td></tr>
+	<tr><td align="center">Class Description :</td><td>{{ myschedule.Schedule_description }}</td></tr>
+	<tr><td align="center">Extra Note :</td><td>{{ myschedule.Extra_notes }}</td></tr>
+	<tr><td align="center">Class held :</td><td>{{ myschedule.Class_held_status }}</td></tr>
+	<tr><td align="center">Class Date Time:</td><td>{{ myschedule.Schedule_datetime }}</td>
       {% endfor %}
       {% endfor %}
+      {% endfor %}
+	</table>
     </div>
 
     <div class="clear"></div>

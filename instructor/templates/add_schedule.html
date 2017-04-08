@@ -13,42 +13,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <link rel="stylesheet" href="{% static 'static_dirs/layout/styles/layout.css' %}" type="text/css" />
 <script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.slidepanel.setup.js' %}"></script>
-  <style>
-a.gallerypic{
-  text-decoration:none;
-  position:relative;
-  display:block;
-  border:1px solid #666;
-  padding:3px;
-  margin-right:5px;
-  float:left;
-}
 
-a.gallerypic span.zoom-icon{
-  visibility:hidden;
-  position:absolute;
-  left:35%;
-  top:75% ;
-  filter:alpha(opacity=50);
-  -moz-opacity:0.5;
-  -khtml-opacity: 0.5;
-  opacity: 1.0;
-}
-
-a.gallerypic:hover span.zoom-icon{
-  visibility:visible;
-}
-input[type=submit] {
-    width: 100%;
-    background-color: grey;
-    color: white;
-    padding: 5px 20px;
-    margin: 2px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-</style>
 </head>
 <body>
 <div class="wrapper col0">
@@ -135,12 +100,31 @@ input[type=submit] {
 <!-- ####################################################################################################### -->
 <div class="wrapper col4">
   <div id="container">
-    <div id="content">
-      <h2>Add Schedule</h2>
+    <div id="content" style="height:600px;">
+      <center><h2>Add Schedule</h2></center>
 
-    <!--Form here Schedule -->
-
+    <form action="{{ action }}" method="post">{% csrf_token %}
+              <table>
+                {% for fields in form %}
+                <tr><td>{{ fields.label_tag }}</td><td>{{ fields }}</td></tr>
+                {% endfor %}
+              </table>
+      <center><input type="submit" value="Submit"></center>
+    </form>
     </div>
+    <div id="column">
+      <div class="subnav">
+      <h2>Class Details</h2>
+        <ul>
+          <li><a href="/instructor_course/">My Course</a></li>
+          <li><a href="/view_class/">Class Details and Schedule</a></li>
+            <ul>
+              <li><a href="/add_class/">Add Class</a></li>
+            </ul>
+          <li><a href="/add_material/">Add Material</a>
+          <li><a href="/add_schedule/">Add Schedule</a>
+        </ul>
+      </div></div>
     <div class="clear"></div>
   </div>
 </div>

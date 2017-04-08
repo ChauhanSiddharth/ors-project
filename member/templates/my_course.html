@@ -201,8 +201,31 @@ a.gallerypic:hover span.zoom-icon{
         </tr>
           {% endfor %}
       </table>
+      <center><h2>Schedule</h2></center>
+      <table align="center">
 
-    </div>
+        <thead>
+        <th>Class Title</th>
+        <th>Class Description</th>
+        <th>Extra Note</th>
+        <th>Class held</th>
+        <th>Class Date Time</th>
+        </thead>
+        {% for schedule in schedule %}
+        <tr>
+	    <td>{{ schedule.Schedule_title }}</td>
+	    <td>{{ schedule.Schedule_description }}</td>
+	    <td>{{ schedule.Extra_notes }}</td>
+	    <td>{{ schedule.Class_held_status }}</td>
+	    <td>{{ schedule.Schedule_datetime }}</td>
+        </tr>
+        {% endfor %}
+        </table>
+  </div>
+    <div id="column">
+
+
+      </div>
     <div class="clear"></div>
   </div>
 </div>
