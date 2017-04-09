@@ -36,11 +36,11 @@ def Add_Class(request):
             if form.is_valid():
                 form.save()
                 return  redirect('/view_class/')
-        else:
-            form = ClassForm()
-            user = request.user
-            instructor = instructor_course.objects.filter( instructor_id = user.id )
-            courseid = instructor.values()[0]['course_id_id']
-            coursedata = course_details.objects.filter( id = courseid )
-            print coursedata
-            return render(request,'add_class.html',{'form':form,'course':coursedata,'instructor':instructor})
+        user = request.user
+        instructor = instructor_course.objects.filter( instructor_id = user.id )
+        instructorid = instructor.values()[0]['instructor_id_id']
+        courseid = instructor.values()[0]['course_id_id']
+        coursedata = course_details.objects.filter( id = courseid )
+        print instructorid
+        print courseid
+        return render(request,'add_class.html',{'form':form,'course':courseid,'instructor':instructorid})

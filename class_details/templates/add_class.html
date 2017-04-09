@@ -102,12 +102,16 @@ Licence URI: http://www.os-templates.com/template-terms
     <div id="content" style="margin-bottom:500px;">
         <h2>Add Class Details</h2>
 
-        <form action="/add_class/" method="post">{% csrf_token %}
+        <form action="{{ action }}" method="POST">{% csrf_token %}
+
+            <!--<input type="hidden" id="course_id" name="course_id" value="{{course}}">
+            <input type="hidden" id="Instructor_id" name="Instructor_id" value="{{instructor}}">-->
+
                 <table>
-                {% for fields in form %}
+                    {% for fields in form %}
                 <tr><td>{{ fields.label_tag }}</td><td>{{ fields }}</td></tr>
                 {% endfor %}
-              </table>
+                </table>
             <center><input type="submit" value="Submit"></center>
         </form>
       </div>

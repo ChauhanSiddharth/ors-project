@@ -5,7 +5,7 @@ class ClassForm(forms.ModelForm):
     class Meta:
         model = Class_Master
         fields = ('class_name','course_id','Instructor_id','schedule_startdate',
-                  'status','Class_completion_status','Extra_notes','Dcreated')
+                  'status','Class_completion_status','Extra_notes')
 
 class Class_MemberForm(forms.ModelForm):
     class Meta:
