@@ -23,6 +23,7 @@ from admin_user.views import AdminProfile
 from contact.views import Contact_View
 from orders.views import new_order,Payment_Gateway
 from class_details.views import Add_Class, View_Class
+from schedule.views import Change_Schedule,Update_Schedule
 
 
 urlpatterns = [
@@ -42,6 +43,8 @@ urlpatterns = [
     url(r'^my_course/', My_Course),
     url(r'^add_class/', Add_Class),
     url(r'^view_class/', View_Class),
+    url(r'^change_schedule/',Change_Schedule),
+    url(r'^update_schedule/', Update_Schedule),
     url(r'^admin_tools/', include('admin_tools.urls')),
 
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -8,11 +8,12 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Courses</title>{% load staticfiles %}
+<title>Add Course Schedule</title>{% load staticfiles %}
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link rel="stylesheet" href="{% static 'static_dirs/layout/styles/layout.css' %}" type="text/css" />
 <script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'static_dirs/layout/scripts/jquery.slidepanel.setup.js' %}"></script>
+
 </head>
 <body>
 <div class="wrapper col0">
@@ -38,8 +39,8 @@ Licence URI: http://www.os-templates.com/template-terms
 <div class="wrapper col1">
   <div id="header">
     <div id="logo">
-      <h1><a href="#">My Course</a></h1>
-      <p>Add Class</p>
+      <h1><a href="../index.html">Course</a></h1>
+      <p>Add Course Schedule</p>
     </div>
     <div class="fl_right">
      <ul>
@@ -72,7 +73,7 @@ Licence URI: http://www.os-templates.com/template-terms
       </li>
       <li class="active"><a href="/usercourses/">Courses</a>
         <ul>
-          <li><a href="/instructor_course/">My Course</a></li>
+          <li><a href="/instructor_course/">My Courses</a></li>
           <li><a href="/add_material/">Add Material</a></li>
           <li class="last"><a href="/add_schedule/">Add Schedule</a></li>
         </ul>
@@ -90,27 +91,34 @@ Licence URI: http://www.os-templates.com/template-terms
       <li>&#187;</li>
       <li><a href="/dashboard/">Home</a></li>
       <li>&#187;</li>
-      <li><a href="/instructor_course/">My Course</a></li>
-      <li>&#187;</li>
-      <li class="current"><a href="/add_class/">Add Class</a></li>
+        <li><a href="/courses/">Manage Course</a></li>
+        <li>&#187;</li>
+      <li current="active"><a href="/add_schedule/">Change Schedule</a></li>
     </ul>
   </div>
 </div>
 <!-- ####################################################################################################### -->
 <div class="wrapper col4">
   <div id="container">
-    <div id="content" style="margin-bottom:500px;">
-        <h2>Add Class Details</h2>
+    <div id="content" style="height:600px;">
+      <h2>Update Schedule </h2>
+        <div align="center" border="1px solid black">
+            <form enctype="multipart/form-data" action="/update_schedule/" method="post">{% csrf_token %}
 
-        <form action="/add_class/" method="post">{% csrf_token %}
-                <table>
-                {% for fields in form %}
-                <tr><td>{{ fields.label_tag }}</td><td>{{ fields }}</td></tr>
-                {% endfor %}
-              </table>
-            <center><input type="submit" value="Submit"></center>
-        </form>
-      </div>
+                <table>{% for schedule in schedule %}
+            <input type="hidden" value="{{schedule.Schedule_master_id}}" id="Schedule_master_id" name="Schedule_master_id">
+            <tr><td>Schedule_description : </td><td><input type="text" value="{{schedule.Schedule_description}}" id="Schedule_description" name="Schedule_description"></td></tr>
+            <tr><td>Schedule_title : </td><td><input type="text" value="{{schedule.Schedule_title}}" id="Schedule_title" name="Schedule_title"></td></tr>
+            <tr><td>Class_held_status : </td><td><select id="Class_held_status" name="Class_held_status" placeholder="{{schedule.Class_held_status}}"><option>Complete</option><option>Pending</option><option>Cancelled</option></select></td></tr>
+            <tr><td>Extra_notes : </td><td><input type="text" value="{{schedule.Extra_notes}}" id="Extra_notes" name="Extra_notes"></td></tr>
+            <tr><td>Status : </td><td><select id="Status" name="Status" placeholder="{{schedule.Status}}"><option>Active</option><option>Deactive</option></select></td></tr>
+                   {% endfor %}
+                    </table>
+                <input type="submit" value="Update">
+
+                </form>
+            {{display}}
+    </div></div>
     <div id="column">
       <div class="subnav">
       <h2>Class Details</h2>
@@ -120,7 +128,6 @@ Licence URI: http://www.os-templates.com/template-terms
             <ul>
               <li><a href="/add_class/">Add Class</a></li>
             </ul>
-          </li>
           <li><a href="/add_material/">Add Material</a>
           <li><a href="/add_schedule/">Add Schedule</a>
         </ul>
