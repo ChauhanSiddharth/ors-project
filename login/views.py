@@ -10,6 +10,7 @@ from .models import UserProfile
 from course.models import course_details
 from member.views import Dashboard
 from django.core import serializers
+from django.core.validators import validate_email
 # Create your views here.
 
 def login_views(request):
@@ -40,16 +41,24 @@ def logout_views(request):
 def register_views(request):
     form = User_Form(request.POST or None)
     if request.POST:
-        if form.is_valid():
-            user = form.save()
-            username = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password')
-            user.set_password(password)
-            user.save()
-            user = auth.authenticate(username=username, password=password)
-            if user is not None:
-                login(request, user)
-                return redirect(details_views)
+        email = request.POST.get('email')
+        if email.endswith('gmail.com'):
+            if form.is_valid():
+                user = form.save()
+                username = form.cleaned_data.get('username')
+                password = form.cleaned_data.get('password')
+                user.set_password(password)
+                user.save()
+                user = auth.authenticate(username=username, password=password)
+                if user is not None:
+                    login(request, user)
+                    return redirect(details_views)
+        else:
+            context = {
+                "form": form,
+                "display": "Please Enter Valid Information",
+            }
+            return render(request, "register.html", context)
     context = {
         "form":form
     }
