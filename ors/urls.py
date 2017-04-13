@@ -24,7 +24,7 @@ from contact.views import Contact_View
 from orders.views import new_order,Payment_Gateway
 from class_details.views import Add_Class, View_Class
 from schedule.views import Change_Schedule,Update_Schedule
-
+from material.frontend import urls as frontend_urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -45,6 +45,6 @@ urlpatterns = [
     url(r'^view_class/', View_Class),
     url(r'^change_schedule/',Change_Schedule),
     url(r'^update_schedule/', Update_Schedule),
-    url(r'^admin_tools/', include('admin_tools.urls')),
+    url(r'', include(frontend_urls)),
 
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

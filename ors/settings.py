@@ -31,10 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'admin_tools',
-    'admin_tools.theming',
-    'admin_tools.menu',
-    'admin_tools.dashboard',
+    'material.theme.blue',
+    'material',
+    'material.frontend',
+    'material.admin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -62,7 +62,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [ ],
-        #'APP_DIRS': True,
+        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.i18n',
@@ -74,11 +74,6 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-            'loaders' : [
-                'django.template.loaders.filesystem.Loader',
-                'django.template.loaders.app_directories.Loader',
-                'admin_tools.template_loaders.Loader'
-            ]
         },
     },
 ]
@@ -134,12 +129,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'login','static','static_root')
-STATICFILES_DIRS = (
+STATIC_ROOT = os.path.join(BASE_DIR, 'login','static')
+STATIC_DIRS = (
         os.path.join(BASE_DIR, 'login','static','static_dirs'),
 )
 MEDIA_URL = '/media/'
 MEDIA_DIRS = os.path.join(BASE_DIR, 'media')
-ADMIN_TOOLS_MENU = 'menu.CustomMenu'
-ADMIN_TOOLS_INDEX_DASHBOARD = 'dashboard.CustomIndexDashboard'
-ADMIN_TOOLS_APP_INDEX_DASHBOARD = 'dashboard.CustomAppIndexDashboard'
