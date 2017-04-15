@@ -2,8 +2,9 @@
 On-RequestCourses Coordination System
 clone or download this project
 Go to the downloaded path in terminal :
-  ~ Run project : / python manage.py runserver
-  
+  ~ Run project 
+    python manage.py runserver
+  
   
 1).Register for new account :
   ~ /register/
