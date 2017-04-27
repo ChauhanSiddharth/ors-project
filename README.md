@@ -5,7 +5,7 @@ Clone or Download this project
 
 Go to the downloaded path in terminal :
 
-Run downloaded project 
+Run project 
 
   > $ python manage.py runserver
   
