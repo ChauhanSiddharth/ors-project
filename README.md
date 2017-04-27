@@ -3,11 +3,11 @@
 clone or download this project
 Go to the downloaded path in terminal :
   ~ Run downloaded project 
-    > python manage.py runserver
+  > $ python manage.py runserver
   
   OR
   ~ Clone repository
-  > git clone https://github.com/ChauhanSiddharth/ors-project
+  > $ git clone https://github.com/ChauhanSiddharth/ors-project
 
 
   
