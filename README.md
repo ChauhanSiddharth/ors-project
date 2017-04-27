@@ -9,6 +9,7 @@ Run downloaded project
 
   > $ python manage.py runserver
   
+
 OR
 
 Clone repository
