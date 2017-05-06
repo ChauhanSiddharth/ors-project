@@ -16,7 +16,7 @@ Clone repository
 
   <code>$ git clone https://github.com/ChauhanSiddharth/ors-project</code>
 
-For dependency packages requirement :
+For dependency packages requirements :
 
   Django 1.10.6
   
@@ -26,4 +26,9 @@ For dependency packages requirement :
   
   <code>$ pip install django-material</code>
   
-
+  <hr>
+  
+  **ORS Flow Diagram Basic**
+  
+  <a href="http://tinypic.com?ref=2rf4zdx" target="_blank"><img src="http://i66.tinypic.com/2rf4zdx.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
+  
