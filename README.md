@@ -15,3 +15,15 @@ OR
 Clone repository
 
   > $ git clone https://github.com/ChauhanSiddharth/ors-project
+
+For dependency packages requirement :
+
+  Django 1.10.6
+  
+  <code>pip install django</code>
+  
+  Django-Material
+  
+  <code>pip install django-material</code>
+  
+
