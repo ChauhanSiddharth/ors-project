@@ -25,7 +25,7 @@ SECRET_KEY = 'jezep&!$s=%23l^*q7eo8xcvx#cx@(1&iuc1-&d&5^5)d)ce$3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['firstapppython.herokuapp.com']
+ALLOWED_HOSTS = ["firstapppython.herokuapp.com"]
 
 
 # Application definition
