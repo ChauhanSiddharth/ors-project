@@ -29,6 +29,7 @@ For dependency packages requirements :
   <hr>
   
   **ORS Flow Diagram Basic**
-  
+  Login Portal
   <a href="https://ibb.co/JQscB3t" target="_blank"><img src="https://i.ibb.co/4dVFm1t/Screenshot-180.png" alt="Screenshot-180" border="0"></a>
-  
+  Admin Account
+  <a href="https://ibb.co/JQscB3t" target="_blank"><img src="https://i.ibb.co/cY2Q8Fg/ors-admin-account.png" alt="ors-admin-account" border="0"></a>
