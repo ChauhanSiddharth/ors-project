@@ -30,5 +30,5 @@ For dependency packages requirements :
   
   **ORS Flow Diagram Basic**
   
-  <a href="http://tinypic.com?ref=2rf4zdx" target="_blank"><img src="http://i66.tinypic.com/2rf4zdx.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
+  <a href="https://ibb.co/JQscB3t" target="_blank"><img src="https://i.ibb.co/4dVFm1t/Screenshot-180.png" alt="Screenshot-180" border="0"></a>
   
