@@ -1,11 +1,11 @@
-# ors-project
+# ors-project 
 **On-RequestCourses Coordination System**
 
 Clone or Download this project
 
 Go to the downloaded path in terminal :
 
-Run project 
+Run project (Run on python 2.7 enviornment only)
 
  <code>$ python manage.py runserver</code>
   
@@ -29,7 +29,15 @@ For dependency packages requirements :
   <hr>
   
   **ORS Flow Diagram Basic**
-  Login Portal
-  <a href="https://ibb.co/JQscB3t" target="_blank"><img src="https://i.ibb.co/4dVFm1t/Screenshot-180.png" alt="Screenshot-180" border="0"></a>
+ 
+ Login Portal
+  
+  <img src="https://i.ibb.co/4dVFm1t/Screenshot-180.png" alt="Screenshot-180" border="0">
+  
   Admin Account
-  <a href="https://ibb.co/JQscB3t" target="_blank"><img src="https://i.ibb.co/cY2Q8Fg/ors-admin-account.png" alt="ors-admin-account" border="0"></a>
+  
+  <img src="https://i.ibb.co/cY2Q8Fg/ors-admin-account.png" alt="ors-admin-account" border="0">
+  
+  Member Dashboard
+  
+  <img src="https://i.ibb.co/nMPjypb/ors-member-dash.png" alt="ors-member-dash" border="0">
