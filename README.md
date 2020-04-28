@@ -41,3 +41,7 @@ For dependency packages requirements :
   Member Dashboard
   
   <img src="https://i.ibb.co/nMPjypb/ors-member-dash.png" alt="ors-member-dash" border="0">
+  
+  Member Course Material and Schedule
+  
+  <img src="https://i.ibb.co/LPZhTzN/Screenshot-183.png" alt="Screenshot-183" border="0">
