@@ -1,4 +1,4 @@
-# ors-project 
+## ors-project 
 **On-RequestCourses Coordination System**
 
 Clone or Download this project
@@ -9,12 +9,6 @@ Run project (Run on python 2.7 enviornment only)
 
  <code>$ python manage.py runserver</code>
   
-
-OR
-
-Clone repository
-
-  <code>$ git clone https://github.com/ChauhanSiddharth/ors-project</code>
 
 For dependency packages requirements :
 
