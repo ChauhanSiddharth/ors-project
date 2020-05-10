@@ -5,20 +5,14 @@ Clone or Download this project
 
 Go to the downloaded path in terminal :
 
-Run project (Run on python 2.7 enviornment only)
+### Install all requirements using pip.
 
- <code>$ python manage.py runserver</code>
-  
+### `pip install -r requirements.txt`
 
-For dependency packages requirements :
+### Run project (Run on python 2.7 enviornment only)
 
-  Django 1.10.6
-  
-  <code>$ pip install django</code>
-  
-  Django-Material
-  
-  <code>$ pip install django-material</code>
+### `python manage.py runserver`
+
   
   <hr>
   
