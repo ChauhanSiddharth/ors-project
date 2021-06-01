@@ -6,7 +6,7 @@ functools32==3.2.3.post2
 html5lib==0.999999999
 Pillow==4.1.0
 requests==2.13.0
-urllib3==1.13.1
+urllib3==1.26.5
 virtualenv==15.1.0
 whitenoise==3.3.0
 gunicorn==19.7.1
