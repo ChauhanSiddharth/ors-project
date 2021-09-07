@@ -4,7 +4,7 @@ django-material==0.13.1
 enum34==1.1.6
 functools32==3.2.3.post2
 html5lib==0.999999999
-Pillow==4.1.0
+Pillow==8.3.2
 requests==2.13.0
 urllib3==1.13.1
 virtualenv==15.1.0
